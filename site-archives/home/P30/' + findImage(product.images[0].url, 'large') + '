@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+  <script type="text/javascript" src="http://use.typekit.com/cmy5lgf.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js" type="text/javascript"></script>
+  <script type="text/javascript" charset="utf-8">
+      var subdomain = 'notesfromthetribe';
+      $(function() {
+        function findImage(url, size) {
+              if(!size) return url;
+              var ext = url.match(/\.(\w{2,4}$)/)[1];
+              var dir = url.substr(0, url.lastIndexOf('/') + 1);
+              switch(size.toLowerCase()) {
+                  case 'large':
+                      return dir + '300.' + ext;
+                  case 'medium':
+                      return dir + '175.' + ext;
+                  case 'thumb':
+                      return dir + '75.' + ext;
+                  default:
+                      return url;
+              }
+        }
+        $.getJSON('http://api.bigcartel.com/' + subdomain + '/products.js?callback=?', function(products) {
+          $.each(products, function(i, product) {
+            $('#products').append('<li class="four columns alpha"><a class="four columns alpha" href="http://' + subdomain + '.bigcartel.com' + product.url + '"><img src="'&#32;+&#32;findImage(product.images[0].url,&#32;'large')&#32;+&#32;'" width="100%" /></a></li>');
+            if (i == 5) 
+                return false;
+          });
+        });
+      });
+    </script>
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Home - Notes from the Tribe</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="../../../styles/base.css">
+	<link rel="stylesheet" href="../../../styles/skeleton.css">
+	<link rel="stylesheet" href="../../../styles/layout.css">
+	<link rel="stylesheet" href="../../../styles/style.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== 
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+        -->
+
+</head>
+<body id="page">
+    <section class="main-nav">
+    <div class="container">
+    <nav role="main" class="main sixteen columns alpha">
+        <ul class="offset-by-four twelve columns alpha">
+            <li class="two columns alpha"><a href="../index.html">Home</a></li>
+            <li class="two columns"><a href="../../about/index.html">About</a></li>
+            <li class="two columns"><a href="http://store.notesfromthetribe.com">Store</a></li>
+            <li class="two columns"><a href="../../gallery/index.html">Art</a></li>
+            <li class="two columns omega"><a href="http://notesfromthetribe.tumblr.com">Blog</a></li>
+        </ul>
+    </nav>
+    </div>
+    </section>
+	<div class="container">
+
+   <section class="four columns alpha general">
+<a href="../../../index.html">
+      <img src="../../../img/notes_logo.jpg" alt="Notes from the tribe" />
+    </a>
+    <img src="../../../img/title.jpg" alt="The art of William Deutsch" />
+        <dl class="four columns alpha contact">
+            <dt>Phone</dt>
+            <dd class="four columns alpha phone"><a href="tel:+1-949-275-0654">949.275.0654</a></dd>
+            <dt>Email</dt>
+            <dd class="four columns alpha"><a href="mailto:crydrawcry@gmail.com">crydrawcry@gmail.com</a></dd>
+        </dl>
+
+        <nav class="social four columns alpha">
+            <ul class="four columns alpha">
+                <li class="one column alpha twitter"><a href="http://twitter.com/#!/willdeutsch">Twitter</a></li>
+                <li class="one column facebook"><a href="http://www.facebook.com/pages/Notes-From-The-Tribe/189786858686">Facebook</a></li>
+                <li class="one column tumblr"><a href="http://notesfromthetribe.tumblr.com">Tumblr</a></li>
+                <li class="one column cargo-collective omega"><a href="http://cargocollective.com/notesfromthetribe">Cargo Collective</a></li>
+            </ul>
+        </nav>
+
+        <h3 class="new-to-store-title four columns alpha">New to the Store</h3>
+        <ul id="products" class="four columns alpha store">
+            </ul>
+    </section>
+<section class="ten columns omega">
+
+
+				    <img src="../../../images/uploads/New-Chuppah.jpg" style="border: 0;" alt="image"  />
+<a href="http://store.notesfromthetribe.com/product/jewish-art-8-5-x11-wedding-chuppah-print" title="BUY PRINT">BUY PRINT</a>
+
+<h4 class="post-title twelve columns alpha"><a href="../entry/wedding_chuppah/index.html" class="ten columns alpha"><span>Notes from</span> <time>05.08.12</time></a></h4>
+			
+			<p>	
+				  <p>One minor confession.<br />
+On September 26th 2000, I went to FYE and purchased a copy of the R and B group 98 Degrees&#8217; album Revelation the day it came out.<br />
+It was the follow up to my favorite of their records, &#8216;98 Degrees and Rising.&#8217;<br />
+Full disclosure: I was a closeted boy band fanatic. <br />
+N&#8217;Sync. <br />
+Backstreet Boys.<br />
+LFO. <br />
+BBMak.<br />
+Westlife.<br />
+Even O-Town (I selfishly bought the C.D. for my sister&#8217;s birthday).<br />
+Though I can now come to grips with this in sort of an ironic-hipster-its-so-uncool-that-it-is-cool way….much how I&#8217;ve accepted my obsession with the card game Magic The Gathering…..as a sixteen year old male trying to fit into a mold of classic teenage masculinity it was a closely guarded secret.<br />
+Don&#8217;t get me wrong, I also genuinely enjoyed other kinds of music ranging from grunge to hip hop, but there was something about these crooners that spoke to my sensibilities. <br />
+It wasn&#8217;t their style….I would&#8217;ve never frosted my tips or worn rhinestone bandanas.<br />
+Nor their dance moves….in fact I wasn&#8217;t crazy about the club hits that got radio play.<br />
+I think it was their soulful, unabashed expressions of love towards the women they sung about.<br />
+Much like Nick Lachey sings on 1997&#8217;s&#8217; &#8216;98 Degrees&#8217; I often felt like the &#8216;Invisible Man.&#8217;&nbsp; <br />
+I wanted a love that was &#8216;like a river, peaceful and deep&#8217; and knew all too well of females that wouldn&#8217;t &#8216;quit playing games with my heart.&#8217;<br />
+I was a romantic. <br />
+I still am.<br />
+Yet with all this talk of love, I&#8217;ve never given more than a passing thought to my own wedding.&nbsp; <br />
+I&#8217;m not terrified of marriage, I just don&#8217;t think about it all that much.<br />
+Some people know exactly what that day is going to look like for them down to the place cards.<br />
+For some reason, the only thing I&#8217;m sure of is that I want to have a Round Table cheese pizza light cheese extra sauce on a thin crust waiting for me at the reception.<br />
+It&#8217;s something I came up with when I was six.<br />
+Weird,I know.<br />
+Oh, I also know a few of the songs we&#8217;ll be playing…..
+</p>
+</p>
+
+
+
+<nav>
+    <ul class="posts-nav ten columns alpha">
+<li class="three columns alpha">
+
+<a href="http://notesfromthetribe.com/index.php/home/ + findImage&#40;product.images[0].url, large&#41; + /P31/" class="previous"><span>Previous<br /> Drawing</span></a>
+
+</li>
+<li class="four columns"><a href="../archives/index.html" title="Archives">Archives</a></li>
+<li class="three columns omega">
+
+<a href="http://notesfromthetribe.com/index.php/home/ + findImage&#40;product.images[0].url, large&#41; + /P29/" class="next"><span>Next <br />drawing</span></a>
+
+</li>
+
+
+
+
+  
+			</section>
+        <section class="two columns omega"></section>
+    <footer class="fourteen columns alpha">
+  <ul class="footer fourteen columns alpha">
+        <li class="copyright ten columns alpha"><span>© 2012</span> William Deutsch</li>
+        <li class="thinkingaboutawesome four columns omega">Designed by <a href="http://mrmrs.cc" title="San Francisco Design">mrmrs</a></li>
+    </ul>
+<div class="fourteen columns alpha six-points">
+<div class="one columns alpha">
+        <img src="../../../img/6points.png" width="40px" />
+</div>
+<p class="twelve columns omega">
+ The Six Points Fellowship for Emerging Jewish Artists is a program of the FJC,
+        originally founded in partnership with Avoda Arts, and JDub, with significant
+        funding from The Jewish Federation of Greater Los Angeles, the Jewish Community
+        Foundation of Los Angeles, and the Righteous Persons Foundation.</p>
+</div>   
+    </footer>
+	</div><!-- container -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-11220684-1");
+pageTracker._setDomainName(".notesfromthetribe.com");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

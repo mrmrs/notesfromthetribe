@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+  <script type="text/javascript" src="http://use.typekit.com/cmy5lgf.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js" type="text/javascript"></script>
+  <script type="text/javascript" charset="utf-8">
+      var subdomain = 'notesfromthetribe';
+      $(function() {
+        function findImage(url, size) {
+              if(!size) return url;
+              var ext = url.match(/\.(\w{2,4}$)/)[1];
+              var dir = url.substr(0, url.lastIndexOf('/') + 1);
+              switch(size.toLowerCase()) {
+                  case 'large':
+                      return dir + '300.' + ext;
+                  case 'medium':
+                      return dir + '175.' + ext;
+                  case 'thumb':
+                      return dir + '75.' + ext;
+                  default:
+                      return url;
+              }
+        }
+        $.getJSON('http://api.bigcartel.com/' + subdomain + '/products.js?callback=?', function(products) {
+          $.each(products, function(i, product) {
+            $('#products').append('<li class="four columns alpha"><a class="four columns alpha" href="http://' + subdomain + '.bigcartel.com' + product.url + '"><img src="'&#32;+&#32;findImage(product.images[0].url,&#32;'large')&#32;+&#32;'" width="100%" /></a></li>');
+            if (i == 5) 
+                return false;
+          });
+        });
+      });
+    </script>
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Home - Notes from the Tribe</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="../../../styles/base.css">
+	<link rel="stylesheet" href="../../../styles/skeleton.css">
+	<link rel="stylesheet" href="../../../styles/layout.css">
+	<link rel="stylesheet" href="../../../styles/style.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== 
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+        -->
+
+</head>
+<body id="page">
+    <section class="main-nav">
+    <div class="container">
+    <nav role="main" class="main sixteen columns alpha">
+        <ul class="offset-by-four twelve columns alpha">
+            <li class="two columns alpha"><a href="../index.html">Home</a></li>
+            <li class="two columns"><a href="../../about/index.html">About</a></li>
+            <li class="two columns"><a href="http://store.notesfromthetribe.com">Store</a></li>
+            <li class="two columns"><a href="../../gallery/index.html">Art</a></li>
+            <li class="two columns omega"><a href="http://notesfromthetribe.tumblr.com">Blog</a></li>
+        </ul>
+    </nav>
+    </div>
+    </section>
+	<div class="container">
+
+   <section class="four columns alpha general">
+<a href="../../../index.html">
+      <img src="../../../img/notes_logo.jpg" alt="Notes from the tribe" />
+    </a>
+    <img src="../../../img/title.jpg" alt="The art of William Deutsch" />
+        <dl class="four columns alpha contact">
+            <dt>Phone</dt>
+            <dd class="four columns alpha phone"><a href="tel:+1-949-275-0654">949.275.0654</a></dd>
+            <dt>Email</dt>
+            <dd class="four columns alpha"><a href="mailto:crydrawcry@gmail.com">crydrawcry@gmail.com</a></dd>
+        </dl>
+
+        <nav class="social four columns alpha">
+            <ul class="four columns alpha">
+                <li class="one column alpha twitter"><a href="http://twitter.com/#!/willdeutsch">Twitter</a></li>
+                <li class="one column facebook"><a href="http://www.facebook.com/pages/Notes-From-The-Tribe/189786858686">Facebook</a></li>
+                <li class="one column tumblr"><a href="http://notesfromthetribe.tumblr.com">Tumblr</a></li>
+                <li class="one column cargo-collective omega"><a href="http://cargocollective.com/notesfromthetribe">Cargo Collective</a></li>
+            </ul>
+        </nav>
+
+        <h3 class="new-to-store-title four columns alpha">New to the Store</h3>
+        <ul id="products" class="four columns alpha store">
+            </ul>
+    </section>
+<section class="ten columns omega">
+
+
+				    <img src="../../../images/uploads/Jewish_Art_Will_Deutsch_Rosh_Hashanah_New_Years_Judaism.jpg" style="border: 0;" alt="jewish art rosh hashanah" width="580" height="770" />
+<a href="http://store.notesfromthetribe.com/product/jewish-art-8-5-x11-rosh-hashanah-print" title="BUY PRINT">BUY PRINT</a>
+
+<h4 class="post-title twelve columns alpha"><a href="../entry/rosh_hashanah/index.html" class="ten columns alpha"><span>Notes from</span> <time>01.04.13</time></a></h4>
+			
+			<p>	
+				  <p>My problem with December 31st is just that…mine.<br />
+At the end of each year I trade in my personal expectations for those presented to me by various television shows, songs and movies.<br />
+Based on these, I can&#8217;t help but anticipate one of two following scenarios come New Years Eve:<br />
+1. I show up to &#8216;THE&#8217; party. You know the one I&#8217;m talking about. The kind of decadent gala you step foot into and realize that though this is a night full of events similar to this, none can compare to the all out five alarm fire of festivities taking place right now. It is more than a celebration. It is a confirmation of being alive. At the stroke of midnight you need only take a look around to realize that this may very well be not only the best moment of your life, but a sure sign of things to come.<br />
+2. I get locked in a storage closet/ elevator with a beautiful stranger.&nbsp; What seems like a stroke of bad luck takes a turn for the romantic as we spend all evening baring our souls to one another.<br />
+Yet no matter how many soirees I attend or small enclosed spaces I attempt to get stuck in, neither of these seem to pan out.<br />
+See for me, New Years is about perfection. And nothing is…so it seems to be a lost cause from the start.<br />
+But that&#8217;s why I&#8217;ve always loved Rosh Hashanah.<br />
+I know that seems like an odd thing to say as most of the holiday involves sitting in synagogue for hours on end, but to this day I have never had a bad one.<br />
+It starts with the premise that I could always be a little better.<br />
+With the high holiday I know what I&#8217;m getting and I&#8217;m never disappointed. I eat a little apples and honey, I apologize to the people I&#8217;ve wronged and I forgive those who have wronged me.<br />
+All in all its a sweet new year.<br />
+That said, may we never take up the practice of shul hopping to find the perfect service, counting down to the shofar in Times Square or making out at the stroke of Tekiah Gedolah.
+</p>
+</p>
+
+
+
+<nav>
+    <ul class="posts-nav ten columns alpha">
+<li class="three columns alpha">
+
+<a href="../P21/index.html" class="previous"><span>Previous<br /> Drawing</span></a>
+
+</li>
+<li class="four columns"><a href="../archives/index.html" title="Archives">Archives</a></li>
+<li class="three columns omega">
+
+<a href="../P19/index.html" class="next"><span>Next <br />drawing</span></a>
+
+</li>
+
+
+
+
+  
+			</section>
+        <section class="two columns omega"></section>
+    <footer class="fourteen columns alpha">
+  <ul class="footer fourteen columns alpha">
+        <li class="copyright ten columns alpha"><span>© 2012</span> William Deutsch</li>
+        <li class="thinkingaboutawesome four columns omega">Designed by <a href="http://mrmrs.cc" title="San Francisco Design">mrmrs</a></li>
+    </ul>
+<div class="fourteen columns alpha six-points">
+<div class="one columns alpha">
+        <img src="../../../img/6points.png" width="40px" />
+</div>
+<p class="twelve columns omega">
+ The Six Points Fellowship for Emerging Jewish Artists is a program of the FJC,
+        originally founded in partnership with Avoda Arts, and JDub, with significant
+        funding from The Jewish Federation of Greater Los Angeles, the Jewish Community
+        Foundation of Los Angeles, and the Righteous Persons Foundation.</p>
+</div>   
+    </footer>
+	</div><!-- container -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-11220684-1");
+pageTracker._setDomainName(".notesfromthetribe.com");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

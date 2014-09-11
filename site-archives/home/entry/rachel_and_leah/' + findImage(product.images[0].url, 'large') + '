@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+  <script type="text/javascript" src="http://use.typekit.com/cmy5lgf.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js" type="text/javascript"></script>
+  <script type="text/javascript" charset="utf-8">
+      var subdomain = 'notesfromthetribe';
+      $(function() {
+        function findImage(url, size) {
+              if(!size) return url;
+              var ext = url.match(/\.(\w{2,4}$)/)[1];
+              var dir = url.substr(0, url.lastIndexOf('/') + 1);
+              switch(size.toLowerCase()) {
+                  case 'large':
+                      return dir + '300.' + ext;
+                  case 'medium':
+                      return dir + '175.' + ext;
+                  case 'thumb':
+                      return dir + '75.' + ext;
+                  default:
+                      return url;
+              }
+        }
+        $.getJSON('http://api.bigcartel.com/' + subdomain + '/products.js?callback=?', function(products) {
+          $.each(products, function(i, product) {
+            $('#products').append('<li class="four columns alpha"><a class="four columns alpha" href="http://' + subdomain + '.bigcartel.com' + product.url + '"><img src="'&#32;+&#32;findImage(product.images[0].url,&#32;'large')&#32;+&#32;'" width="100%" /></a></li>');
+            if (i == 5) 
+                return false;
+          });
+        });
+      });
+    </script>
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Home - Notes from the Tribe</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="../../../../styles/base.css">
+	<link rel="stylesheet" href="../../../../styles/skeleton.css">
+	<link rel="stylesheet" href="../../../../styles/layout.css">
+	<link rel="stylesheet" href="../../../../styles/style.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== 
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+        -->
+
+</head>
+<body id="page">
+    <section class="main-nav">
+    <div class="container">
+    <nav role="main" class="main sixteen columns alpha">
+        <ul class="offset-by-four twelve columns alpha">
+            <li class="two columns alpha"><a href="../../index.html">Home</a></li>
+            <li class="two columns"><a href="../../../about/index.html">About</a></li>
+            <li class="two columns"><a href="http://store.notesfromthetribe.com">Store</a></li>
+            <li class="two columns"><a href="../../../gallery/index.html">Art</a></li>
+            <li class="two columns omega"><a href="http://notesfromthetribe.tumblr.com">Blog</a></li>
+        </ul>
+    </nav>
+    </div>
+    </section>
+	<div class="container">
+
+    <section class="four columns alpha general">
+   <a href="../../../../index.html">
+      <img src="../../../../img/notes_logo.jpg" />
+    </a>
+    <img src="../../../../img/title.jpg" alt="Notes from the Tribe" />
+        <dl class="four columns alpha contact">
+            <dt>Phone</dt>
+            <dd class="four columns alpha phone"><a href="tel:+1-949-275-0654">949.275.0654</a></dd>
+            <dt>Email</dt>
+            <dd class="four columns alpha"><a href="mailto:crydrawcry@gmail.com">crydrawcry@gmail.com</a></dd>
+        </dl>
+
+        <nav class="social four columns alpha">
+            <ul class="four columns alpha">
+                <li class="one column alpha twitter"><a href="http://twitter.com/#!/willdeutsch">Twitter</a></li>
+                <li class="one column facebook"><a href="http://www.facebook.com/pages/Notes-From-The-Tribe/189786858686">Facebook</a></li>
+                <li class="one column tumblr"><a href="http://notesfromthetribe.tumblr.com">Tumblr</a></li>
+                <li class="one column cargo-collective omega"><a href="http://cargocollective.com/notesfromthetribe">Cargo Collective</a></li>
+            </ul>
+        </nav>
+
+        <h3 class="new-to-store-title four columns alpha">New to the Store</h3>
+        <ul id="products" class="four columns alpha store">
+            </ul>
+    </section>
+<section class="ten columns omega">
+
+				    <img src="../../../../images/uploads/will_deutsch_jewish_art_jacob_laban_leah_rachel_deception.jpg" style="border: 0;" alt="image" width="580" height="770" />
+
+<nav>
+    <ul class="posts-nav ten columns alpha">
+<li class="three columns alpha">
+
+					<a href="../jcc/index.html" class="previous"><span>Previous <br />drawing<span></a>
+
+</li>
+
+<li class="four columns buy"></a></li>
+
+<li class="three columns omega">
+ 
+				<a href="../shema/index.html" class="next"><span>Next<br /> drawing</span></a>	
+				
+				
+</li>
+</ul>
+</nav>
+
+<h4 class="post-title ten columns alpha"><span>Notes from</span> <time>09.05.14</time></h4>
+			
+			<p>	
+				  <p>When I was in college, my goal was to have so much success outside of academics that I could drop out. <br />
+It worked for Brad Pitt, Steve Jobs and Oprah…I thought it could work for me too.<br />
+I had a two part plan.<br />
+Part one: Find something you&#8217;re passionate about and work really hard for it.<br />
+Part two: Forsake nearly all other distractions to achieve your goal. Distractions include but are not limited to late night partying, recreational drug use and of course class.<br />
+The first part was fairly easy. I made art and was an actor. I painted constantly and went to auditions on the regular.<br />
+The second part proved a bit more difficult. While I couldn&#8217;t completely cut out my social life, I did manage to skip class quite often.<br />
+To be clear I didn&#8217;t want to flunk out of college, I wanted to be so wildly successful that I had no other choice but to leave it.<br />
+So I still had to study.<br />
+Even with two majors this was very manageable.<br />
+As an Art major, I just had to keep making the work I was already doing and show up occasionally.<br />
+My Interpersonal Communications major mostly required me to know very complex words to very common sense ideas and occasionally write about my feelings with them.<br />
+In either case, the syllabus, reading materials and anything else you could need was online or in a textbook. Really the only reason to show up to class was if you were an auditory learner or for the midterm and final.<br />
+This made skipping class not only easy, but from a time management perspective, prudent.<br />
+I was able to make my life&#8217;s work and still receive high marks.<br />
+But after 5 years and two majors, for the sake of tradition, I decided to go to my last week of instruction.&nbsp; <br />
+I&#8217;d made it this far and I figured I&#8217;d give it a go.<br />
+I even woke up early for the last class I&#8217;d ever take at UCLA.<br />
+Communication Studies 116: Counseling Intimate Relationships<br />
+Ceremoniously, I put on the outfit I&#8217;d wore to my very first day 5 years before, brought an untouched messenger bag and headed off to class.<br />
+I showed up about 10 minutes late, which was early for me.<br />
+The room was unusually packed.<br />
+There wasn&#8217;t an empty seat in the house.<br />
+Hundreds of students hunched over their desks intensely focused on their…scantrons?!?!?!?!<br />
+It couldn&#8217;t be.<br />
+IT.<br />
+COULD.<br />
+NOT.<br />
+BE.<br />
+But it was.<br />
+Everything began to blur. <br />
+To confirm the nightmare that was unfolding in front of me I conferred with one of the T.A.&#8216;s.<br />
+He assured me that had I looked at the syllabus it stated very clearly that the final would happen a week early.<br />
+I promptly went outside and vomited in a bush.<br />
+There&#8217;s something that happens to reality when blood is pumping so fast to your heart that your brain can&#8217;t keep up.<br />
+I marched back inside directly to the professor.<br />
+&#8216;I&#8217;m so sorry, I had no idea the final was today. My Grandmother just passed and I just lost track of everything.&#8217;<br />
+A side note here. Yes. That is the worst, most cliched excuse in the history of excuses…but my heart goes out to those of you who have actually lost a grandparent at a time when you had to take a final and nobody would believe you.<br />
+Not me though. <br />
+I was a bold faced, panicked liar that smelled of barf.<br />
+And he wasn&#8217;t buying it. &#8216;I&#8217;m sorry to hear about your Grandmother Mr. Deutsch, why don&#8217;t you grab a scantron and we can talk about this later.&#8217;<br />
+I borrowed a #2 pencil and laid down in the middle of the lecture hall on my empty stomach.<br />
+At least it was multiple choice. <br />
+And everybody was fond of making fun of Communications as a &#8216;common sense&#8217; course anyway.<br />
+Based on the B+ I got, it turns out they were right.<br />
+But the moral of that story has always stuck with me. Had I simply read the supplementary materials closely I would&#8217;ve seen exactly when the final was.<br />
+Case in point: ALWAYS read the fine print. </p>
+
+<p>If Jacob had learned this lesson, maybe he wouldn&#8217;t have had to work an extra 7 years.
+</p>
+</p>
+
+
+  
+			</section>
+<section class="two columns omega"> </section>
+     <footer class="fourteen columns alpha">
+  <ul class="footer fourteen columns alpha">
+        <li class="copyright ten columns alpha"><span>© 2012</span> William Deutsch</li>
+        <li class="thinkingaboutawesome four columns omega">Designed by <a href="http://mrmrs.cc" title="San Francisco Design">mrmrs</a></li>
+    </ul>
+<div class="fourteen columns alpha six-points">
+<div class="one columns alpha">
+        <img src="../../../../img/6points.png" width="40px" />
+</div>
+<p class="twelve columns omega">
+ The Six Points Fellowship for Emerging Jewish Artists is a program of the FJC,
+        originally founded in partnership with Avoda Arts, and JDub, with significant
+        funding from The Jewish Federation of Greater Los Angeles, the Jewish Community
+        Foundation of Los Angeles, and the Righteous Persons Foundation.</p>
+</div>   
+    </footer>
+</div> <!-- container -->
+
+			
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-11220684-1");
+pageTracker._setDomainName(".notesfromthetribe.com");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

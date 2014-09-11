@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+  <script type="text/javascript" src="http://use.typekit.com/cmy5lgf.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js" type="text/javascript"></script>
+  <script type="text/javascript" charset="utf-8">
+      var subdomain = 'notesfromthetribe';
+      $(function() {
+        function findImage(url, size) {
+              if(!size) return url;
+              var ext = url.match(/\.(\w{2,4}$)/)[1];
+              var dir = url.substr(0, url.lastIndexOf('/') + 1);
+              switch(size.toLowerCase()) {
+                  case 'large':
+                      return dir + '300.' + ext;
+                  case 'medium':
+                      return dir + '175.' + ext;
+                  case 'thumb':
+                      return dir + '75.' + ext;
+                  default:
+                      return url;
+              }
+        }
+        $.getJSON('http://api.bigcartel.com/' + subdomain + '/products.js?callback=?', function(products) {
+          $.each(products, function(i, product) {
+            $('#products').append('<li class="four columns alpha"><a class="four columns alpha" href="http://' + subdomain + '.bigcartel.com' + product.url + '"><img src="'&#32;+&#32;findImage(product.images[0].url,&#32;'large')&#32;+&#32;'" width="100%" /></a></li>');
+            if (i == 5) 
+                return false;
+          });
+        });
+      });
+    </script>
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Home - Notes from the Tribe</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="../../../../styles/base.css">
+	<link rel="stylesheet" href="../../../../styles/skeleton.css">
+	<link rel="stylesheet" href="../../../../styles/layout.css">
+	<link rel="stylesheet" href="../../../../styles/style.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== 
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+        -->
+
+</head>
+<body id="page">
+    <section class="main-nav">
+    <div class="container">
+    <nav role="main" class="main sixteen columns alpha">
+        <ul class="offset-by-four twelve columns alpha">
+            <li class="two columns alpha"><a href="../../index.html">Home</a></li>
+            <li class="two columns"><a href="../../../about/index.html">About</a></li>
+            <li class="two columns"><a href="http://store.notesfromthetribe.com">Store</a></li>
+            <li class="two columns"><a href="../../../gallery/index.html">Art</a></li>
+            <li class="two columns omega"><a href="http://notesfromthetribe.tumblr.com">Blog</a></li>
+        </ul>
+    </nav>
+    </div>
+    </section>
+	<div class="container">
+
+    <section class="four columns alpha general">
+   <a href="../../../../index.html">
+      <img src="../../../../img/notes_logo.jpg" />
+    </a>
+    <img src="../../../../img/title.jpg" alt="Notes from the Tribe" />
+        <dl class="four columns alpha contact">
+            <dt>Phone</dt>
+            <dd class="four columns alpha phone"><a href="tel:+1-949-275-0654">949.275.0654</a></dd>
+            <dt>Email</dt>
+            <dd class="four columns alpha"><a href="mailto:crydrawcry@gmail.com">crydrawcry@gmail.com</a></dd>
+        </dl>
+
+        <nav class="social four columns alpha">
+            <ul class="four columns alpha">
+                <li class="one column alpha twitter"><a href="http://twitter.com/#!/willdeutsch">Twitter</a></li>
+                <li class="one column facebook"><a href="http://www.facebook.com/pages/Notes-From-The-Tribe/189786858686">Facebook</a></li>
+                <li class="one column tumblr"><a href="http://notesfromthetribe.tumblr.com">Tumblr</a></li>
+                <li class="one column cargo-collective omega"><a href="http://cargocollective.com/notesfromthetribe">Cargo Collective</a></li>
+            </ul>
+        </nav>
+
+        <h3 class="new-to-store-title four columns alpha">New to the Store</h3>
+        <ul id="products" class="four columns alpha store">
+            </ul>
+    </section>
+<section class="ten columns omega">
+
+				    <img src="../../../../images/uploads/Will_deutsch_Jewish_art_judaism_David_and_goliath.jpg" style="border: 0;" alt="image" width="500" height="667" />
+
+<nav>
+    <ul class="posts-nav ten columns alpha">
+<li class="three columns alpha">
+
+					<a href="../cain_and_abel/index.html" class="previous"><span>Previous <br />drawing<span></a>
+
+</li>
+
+<li class="four columns buy"><a href="http://store.notesfromthetribe.com/product/jewish-art-8-5-x11-david-an-goliathl-print" title="BUY PRINT">BUY PRINT</a></a></li>
+
+<li class="three columns omega">
+ 
+				<a href="../tzedakah/index.html" class="next"><span>Next<br /> drawing</span></a>	
+				
+				
+</li>
+</ul>
+</nav>
+
+<h4 class="post-title ten columns alpha"><span>Notes from</span> <time>05.04.11</time></h4>
+			
+			<p>	
+				  <p>&nbsp;  &nbsp; This is a story about a boy.&nbsp;  A boy named….Billy….lets say.&nbsp; Billy was a good kid, a sweet kid, a little awkward socially some might say.&nbsp;  But good.&nbsp;  The other children couldn&#8217;t see that good though; they couldn&#8217;t manage to get past his small stature.&nbsp; He was young for his grade and to make matters worse he came from parents whose combined height was still less than eleven feet. To put it bluntly-he was a shrimp.&nbsp;  As it was, Billy had fallen into that most unfortunate situation of social situations…he was at the bottom of the nerd hierarchy.&nbsp; Yes. The nerd hierarchy.&nbsp; Even the unpopular have an elite.&nbsp;  Not only was Billy not cool, but his size made him ripe for being picked on by those who were picked on.&nbsp; In particular their was one overweight classmate who relished mocking him even more than the others. Perhaps it was because of the size differential.&nbsp; We&#8217;ll call this large outcast Chris.&nbsp;  Chris called him munchkin and garden gnome and Billy-bo Baggins.&nbsp;  But no matter how clever the names, they hurt Billy-bo Baggins. They hurt him bad.&nbsp; But Billy had a plan. He wasn&#8217;t going to spend the rest of his life making trips between the bathroom and the water fountain at lunch. He was going places.&nbsp; You see, Billy knew that what he lacked in mass, he made up for in brain power.&nbsp; This would be his revenge.&nbsp;   That Hannukah, Billy received a word of the day calendar. Three hundred and sixty five new phonic weapons to wield. He looked forward to his daily vocabulary lessons, writing each one on a post it note and sticking it on his bathroom mirror.&nbsp; Every morning he would go over this material, drinking in the definitions.&nbsp; And then one day it happened.&nbsp;  He found the perfect word.&nbsp; The word that described Chris in all his heinous, disgusting, revolting, foul, nasty, cruddy, loathly, offensive, wicked, implike, repellent, distasteful, unsporting, putrid and repulsive glory.&nbsp;  He took it to school with him. He carried it in his head hidden behind a sheepish smile and he waited.&nbsp;  First period couldn&#8217;t end soon enough. Billy daydreamed what it would be like for Chris to hear this word, to let the meaning fully sink into that thick head.&nbsp; This would surely prove not only to Chris but to all his classmates that he was indeed their mental superior.&nbsp; Someone to be revered.&nbsp; Admired even.&nbsp; Never again would he face the slings and arrows of their taunts.&nbsp; Today, he would outsmart them. The bell rang for recess.&nbsp; Billy sat where he always sat as the inevitable was soon to occur. Chris lumbered over, a roll of Fruit by the Foot dangling from his mouth.<br />
+&#8216;Hey Billy-Bo!&nbsp; It&#8217;s too bad they don&#8217;t make this in your size! They&#8217;d call it Fruit by the Millimeter!&#8217;<br />
+Billy smiled. This was it.<br />
+&#8216;Chris. You are so REBARBATIVE.&#8217;<br />
+Silence. Victory. The fat boy was confused.<br />
+&#8216;What did you call me!?!&#8217;<br />
+&#8216;I said you&#8217;re REBARBATIVE Chris, you are SO REBARBATIVE.&#8217;<br />
+It felt so good to repeat it.<br />
+&#8216;You&#8217;re calling me Rubarb-if?&#8217;<br />
+&#8216;NO Chris.&nbsp; I&#8217;m calling you REBARBATIVE. DO YOU NOT KNOW WHAT REBARBATIVE MEANS?&#8217;<br />
+It was obvious he didn&#8217;t.&nbsp; Chris looked around, no help in sight. He had been bested and he was on his own.<br />
+That day Billy came home early with a black eye.
+</p>
+</p>
+
+
+  
+			</section>
+<section class="two columns omega"> </section>
+     <footer class="fourteen columns alpha">
+  <ul class="footer fourteen columns alpha">
+        <li class="copyright ten columns alpha"><span>© 2012</span> William Deutsch</li>
+        <li class="thinkingaboutawesome four columns omega">Designed by <a href="http://mrmrs.cc" title="San Francisco Design">mrmrs</a></li>
+    </ul>
+<div class="fourteen columns alpha six-points">
+<div class="one columns alpha">
+        <img src="../../../../img/6points.png" width="40px" />
+</div>
+<p class="twelve columns omega">
+ The Six Points Fellowship for Emerging Jewish Artists is a program of the FJC,
+        originally founded in partnership with Avoda Arts, and JDub, with significant
+        funding from The Jewish Federation of Greater Los Angeles, the Jewish Community
+        Foundation of Los Angeles, and the Righteous Persons Foundation.</p>
+</div>   
+    </footer>
+</div> <!-- container -->
+
+			
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-11220684-1");
+pageTracker._setDomainName(".notesfromthetribe.com");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

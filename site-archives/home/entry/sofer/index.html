@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+  <script type="text/javascript" src="http://use.typekit.com/cmy5lgf.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js" type="text/javascript"></script>
+  <script type="text/javascript" charset="utf-8">
+      var subdomain = 'notesfromthetribe';
+      $(function() {
+        function findImage(url, size) {
+              if(!size) return url;
+              var ext = url.match(/\.(\w{2,4}$)/)[1];
+              var dir = url.substr(0, url.lastIndexOf('/') + 1);
+              switch(size.toLowerCase()) {
+                  case 'large':
+                      return dir + '300.' + ext;
+                  case 'medium':
+                      return dir + '175.' + ext;
+                  case 'thumb':
+                      return dir + '75.' + ext;
+                  default:
+                      return url;
+              }
+        }
+        $.getJSON('http://api.bigcartel.com/' + subdomain + '/products.js?callback=?', function(products) {
+          $.each(products, function(i, product) {
+            $('#products').append('<li class="four columns alpha"><a class="four columns alpha" href="http://' + subdomain + '.bigcartel.com' + product.url + '"><img src="'&#32;+&#32;findImage(product.images[0].url,&#32;'large')&#32;+&#32;'" width="100%" /></a></li>');
+            if (i == 5) 
+                return false;
+          });
+        });
+      });
+    </script>
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Home - Notes from the Tribe</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="../../../../styles/base.css">
+	<link rel="stylesheet" href="../../../../styles/skeleton.css">
+	<link rel="stylesheet" href="../../../../styles/layout.css">
+	<link rel="stylesheet" href="../../../../styles/style.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== 
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+        -->
+
+</head>
+<body id="page">
+    <section class="main-nav">
+    <div class="container">
+    <nav role="main" class="main sixteen columns alpha">
+        <ul class="offset-by-four twelve columns alpha">
+            <li class="two columns alpha"><a href="../../index.html">Home</a></li>
+            <li class="two columns"><a href="../../../about/index.html">About</a></li>
+            <li class="two columns"><a href="http://store.notesfromthetribe.com">Store</a></li>
+            <li class="two columns"><a href="../../../gallery/index.html">Art</a></li>
+            <li class="two columns omega"><a href="http://notesfromthetribe.tumblr.com">Blog</a></li>
+        </ul>
+    </nav>
+    </div>
+    </section>
+	<div class="container">
+
+    <section class="four columns alpha general">
+   <a href="../../../../index.html">
+      <img src="../../../../img/notes_logo.jpg" />
+    </a>
+    <img src="../../../../img/title.jpg" alt="Notes from the Tribe" />
+        <dl class="four columns alpha contact">
+            <dt>Phone</dt>
+            <dd class="four columns alpha phone"><a href="tel:+1-949-275-0654">949.275.0654</a></dd>
+            <dt>Email</dt>
+            <dd class="four columns alpha"><a href="mailto:crydrawcry@gmail.com">crydrawcry@gmail.com</a></dd>
+        </dl>
+
+        <nav class="social four columns alpha">
+            <ul class="four columns alpha">
+                <li class="one column alpha twitter"><a href="http://twitter.com/#!/willdeutsch">Twitter</a></li>
+                <li class="one column facebook"><a href="http://www.facebook.com/pages/Notes-From-The-Tribe/189786858686">Facebook</a></li>
+                <li class="one column tumblr"><a href="http://notesfromthetribe.tumblr.com">Tumblr</a></li>
+                <li class="one column cargo-collective omega"><a href="http://cargocollective.com/notesfromthetribe">Cargo Collective</a></li>
+            </ul>
+        </nav>
+
+        <h3 class="new-to-store-title four columns alpha">New to the Store</h3>
+        <ul id="products" class="four columns alpha store">
+            </ul>
+    </section>
+<section class="ten columns omega">
+
+				    <img src="../../../../images/uploads/Jewish_Art_Will_Deutsch_Judaism_Jews_Scribe_Sofer_Torah.jpg" style="border: 0;" alt="image" width="580" height="770" />
+
+<nav>
+    <ul class="posts-nav ten columns alpha">
+<li class="three columns alpha">
+
+					<a href="../hair_straightener/index.html" class="previous"><span>Previous <br />drawing<span></a>
+
+</li>
+
+<li class="four columns buy"></a></li>
+
+<li class="three columns omega">
+ 
+				<a href="../giant_menorah/index.html" class="next"><span>Next<br /> drawing</span></a>	
+				
+				
+</li>
+</ul>
+</nav>
+
+<h4 class="post-title ten columns alpha"><span>Notes from</span> <time>04.29.13</time></h4>
+			
+			<p>	
+				  <p>My preschool teacher was concerned that I had developmental disabilities.<br />
+So concerned in fact that she called my Mother into the school to discuss it.<br />
+My Mother thanked her and asked what behavior I was displaying that would denote any sort of issue.<br />
+At this point my teacher filled up a pitcher with water, gave me a cup and asked me to pour.<br />
+I spilled the contents everywhere.<br />
+&#8216;Use your left hand William&#8217; my Mother said.</p>
+
+<p>Problem solved.</p>
+
+<p>It hasn&#8217;t been easy growing up as a southpaw in a right handed world.<br />
+The worst was learning to cut paper.<br />
+Thats when they really separate the righties from the lefties.<br />
+While everybody else got beautifully pointed, stainless steel blades with bright red handles I was forced to make do with the rounded off, puke green shears left rusting in an old Yuban coffee can branded with a giant &#8216;L&#8217;. <br />
+Naturally, this was par for the course.<br />
+Right handed desks.<br />
+Right handed baseball mitts.<br />
+Right handed guitars and can openers.<br />
+Even the cords on credit card machines are on the right hand side so you have to stretch them awkwardly at an angle just to sign with your left hand.<br />
+I&#8217;m reminded that about 90 percent of the world is right handed every time I go to shake somebody&#8217;s hand.<br />
+But by and far the bane of my existence has been the fact that I cannot write more than a sentence without completely smudging the writing and discoloring the side of my palm as I drag it across the paper from left to right.<br />
+And to top it off studies show that my lifespan is almost a decade shorter than the rest of you.</p>
+
+<p>On the other hand (pun so very much intended) if I were a more pious man, its for this very reason that I&#8217;d probably make an excellent sofer.
+</p>
+</p>
+
+
+  
+			</section>
+<section class="two columns omega"> </section>
+     <footer class="fourteen columns alpha">
+  <ul class="footer fourteen columns alpha">
+        <li class="copyright ten columns alpha"><span>© 2012</span> William Deutsch</li>
+        <li class="thinkingaboutawesome four columns omega">Designed by <a href="http://mrmrs.cc" title="San Francisco Design">mrmrs</a></li>
+    </ul>
+<div class="fourteen columns alpha six-points">
+<div class="one columns alpha">
+        <img src="../../../../img/6points.png" width="40px" />
+</div>
+<p class="twelve columns omega">
+ The Six Points Fellowship for Emerging Jewish Artists is a program of the FJC,
+        originally founded in partnership with Avoda Arts, and JDub, with significant
+        funding from The Jewish Federation of Greater Los Angeles, the Jewish Community
+        Foundation of Los Angeles, and the Righteous Persons Foundation.</p>
+</div>   
+    </footer>
+</div> <!-- container -->
+
+			
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-11220684-1");
+pageTracker._setDomainName(".notesfromthetribe.com");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

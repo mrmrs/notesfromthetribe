@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+  <script type="text/javascript" src="http://use.typekit.com/cmy5lgf.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js" type="text/javascript"></script>
+  <script type="text/javascript" charset="utf-8">
+      var subdomain = 'notesfromthetribe';
+      $(function() {
+        function findImage(url, size) {
+              if(!size) return url;
+              var ext = url.match(/\.(\w{2,4}$)/)[1];
+              var dir = url.substr(0, url.lastIndexOf('/') + 1);
+              switch(size.toLowerCase()) {
+                  case 'large':
+                      return dir + '300.' + ext;
+                  case 'medium':
+                      return dir + '175.' + ext;
+                  case 'thumb':
+                      return dir + '75.' + ext;
+                  default:
+                      return url;
+              }
+        }
+        $.getJSON('http://api.bigcartel.com/' + subdomain + '/products.js?callback=?', function(products) {
+          $.each(products, function(i, product) {
+            $('#products').append('<li class="four columns alpha"><a class="four columns alpha" href="http://' + subdomain + '.bigcartel.com' + product.url + '"><img src="'&#32;+&#32;findImage(product.images[0].url,&#32;'large')&#32;+&#32;'" width="100%" /></a></li>');
+            if (i == 5) 
+                return false;
+          });
+        });
+      });
+    </script>
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Home - Notes from the Tribe</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="../../styles/base.css">
+	<link rel="stylesheet" href="../../styles/skeleton.css">
+	<link rel="stylesheet" href="../../styles/layout.css">
+	<link rel="stylesheet" href="../../styles/style.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== 
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+        -->
+
+</head>
+<body id="page">
+    <section class="main-nav">
+    <div class="container">
+    <nav role="main" class="main sixteen columns alpha">
+        <ul class="offset-by-four twelve columns alpha">
+            <li class="two columns alpha"><a href="../home/index.html">Home</a></li>
+            <li class="two columns"><a href="../about/index.html">About</a></li>
+            <li class="two columns"><a href="http://store.notesfromthetribe.com">Store</a></li>
+            <li class="two columns"><a href="../gallery/index.html">Art</a></li>
+            <li class="two columns omega"><a href="http://notesfromthetribe.tumblr.com">Blog</a></li>
+        </ul>
+    </nav>
+    </div>
+    </section>
+	<div class="container">
+
+   <section class="four columns alpha general">
+<a href="../../index.html">
+      <img src="../../img/notes_logo.jpg" alt="Notes from the tribe" />
+    </a>
+    <img src="../../img/title.jpg" alt="The art of William Deutsch" />
+        <dl class="four columns alpha contact">
+            <dt>Phone</dt>
+            <dd class="four columns alpha phone"><a href="tel:+1-949-275-0654">949.275.0654</a></dd>
+            <dt>Email</dt>
+            <dd class="four columns alpha"><a href="mailto:crydrawcry@gmail.com">crydrawcry@gmail.com</a></dd>
+        </dl>
+
+        <nav class="social four columns alpha">
+            <ul class="four columns alpha">
+                <li class="one column alpha twitter"><a href="http://twitter.com/#!/willdeutsch">Twitter</a></li>
+                <li class="one column facebook"><a href="http://www.facebook.com/pages/Notes-From-The-Tribe/189786858686">Facebook</a></li>
+                <li class="one column tumblr"><a href="http://notesfromthetribe.tumblr.com">Tumblr</a></li>
+                <li class="one column cargo-collective omega"><a href="http://cargocollective.com/notesfromthetribe">Cargo Collective</a></li>
+            </ul>
+        </nav>
+
+        <h3 class="new-to-store-title four columns alpha">New to the Store</h3>
+        <ul id="products" class="four columns alpha store">
+            </ul>
+    </section>
+<section class="ten columns omega">
+
+
+				    <img src="../../images/uploads/maccabee.jpeg" style="border: 0;" alt="image" width="500" height="670" />
+<a href="http://store.notesfromthetribe.com/product/8-5-x11-judah-maccabee-print" title="BUY PRINT">BUY PRINT</a>
+
+<h4 class="post-title twelve columns alpha"><a href="../home/entry/judah_maccabee/index.html" class="ten columns alpha"><span>Notes from</span> <time>12.01.10</time></a></h4>
+			
+			<p>	
+				  <p>&nbsp;  Lets try an experiment.&nbsp; I&#8217;m going to type a word and you tell me the first three words that pop into your head. Here goes……</p>
+
+<p>Jew.</p>
+
+<p>So&#8230;Intelligent? Sardonic? Kafka-esque perhaps?<br />
+What about the word athletic?&nbsp; I&#8217;m guessing not.&nbsp; While we may hold 22% of all Nobel prizes we have won only a single ESPY (Jason Lezak). Now i&#8217;ve heard arguments on the subject ranging from nurture (we encourage intellectual pursuits) to nature (we&#8217;re just not built athletically).&nbsp; These may hold some water, but from a historical perspective, I blame the Maccabees.&nbsp;  Judah Maccabee hated competitive sports.&nbsp; Indeed, he publicly condemned them as a hellenistic influence from the Greeks and abolished athletic displays once he rededicated the second temple. It makes sense to me: a culture that outlaws sports would not be very good at them.&nbsp; Now there are of course exceptions to this rule.&nbsp; And we as Jews are very proud of these exceptions.&nbsp; Which is why I&#8217;ve never watched a single game of baseball, but I know who Sandy Koufax is.&nbsp; Judah Maccabee&#8217;s decree is of course ironic for two reasons: 1).Because Judah Maccabee might be the only biblical Jew besides Samson considered buff (His nickname was &#8216;The Hammer&#8217; for crying out loud. The only person I&#8217;ve ever met nicknamed the Hammer was a quarterback from the midwest with abs you could grate cheese on and a dead ringer for Captain Planet minus the green hair and blue pallor) and 2) Maccabi, the athletic commission in Israel is named after him.&nbsp;  The Maccabia games, held every year in Israel, are truly a tribute to Jewish athleticism in the 21st century.&nbsp; I am proud to say that not only did I compete in them in the year 2000, but I brought home a gold medal.&nbsp; It was of course for the most grueling portion…Talent. Take that Judah Maccabee.
+</p>
+</p>
+
+
+
+<nav>
+    <ul class="posts-nav ten columns alpha">
+<li class="three columns alpha">
+
+<a href="../P74/index.html" class="previous"><span>Previous<br /> Drawing</span></a>
+
+</li>
+<li class="four columns"><a href="../home/archives/index.html" title="Archives">Archives</a></li>
+<li class="three columns omega">
+
+<a href="../P72/index.html" class="next"><span>Next <br />drawing</span></a>
+
+</li>
+
+
+
+
+  
+			</section>
+        <section class="two columns omega"></section>
+    <footer class="fourteen columns alpha">
+  <ul class="footer fourteen columns alpha">
+        <li class="copyright ten columns alpha"><span>© 2012</span> William Deutsch</li>
+        <li class="thinkingaboutawesome four columns omega">Designed by <a href="http://mrmrs.cc" title="San Francisco Design">mrmrs</a></li>
+    </ul>
+<div class="fourteen columns alpha six-points">
+<div class="one columns alpha">
+        <img src="../../img/6points.png" width="40px" />
+</div>
+<p class="twelve columns omega">
+ The Six Points Fellowship for Emerging Jewish Artists is a program of the FJC,
+        originally founded in partnership with Avoda Arts, and JDub, with significant
+        funding from The Jewish Federation of Greater Los Angeles, the Jewish Community
+        Foundation of Los Angeles, and the Righteous Persons Foundation.</p>
+</div>   
+    </footer>
+	</div><!-- container -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-11220684-1");
+pageTracker._setDomainName(".notesfromthetribe.com");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

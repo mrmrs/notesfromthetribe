@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+  <script type="text/javascript" src="http://use.typekit.com/cmy5lgf.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js" type="text/javascript"></script>
+  <script type="text/javascript" charset="utf-8">
+      var subdomain = 'notesfromthetribe';
+      $(function() {
+        function findImage(url, size) {
+              if(!size) return url;
+              var ext = url.match(/\.(\w{2,4}$)/)[1];
+              var dir = url.substr(0, url.lastIndexOf('/') + 1);
+              switch(size.toLowerCase()) {
+                  case 'large':
+                      return dir + '300.' + ext;
+                  case 'medium':
+                      return dir + '175.' + ext;
+                  case 'thumb':
+                      return dir + '75.' + ext;
+                  default:
+                      return url;
+              }
+        }
+        $.getJSON('http://api.bigcartel.com/' + subdomain + '/products.js?callback=?', function(products) {
+          $.each(products, function(i, product) {
+            $('#products').append('<li class="four columns alpha"><a class="four columns alpha" href="http://' + subdomain + '.bigcartel.com' + product.url + '"><img src="'&#32;+&#32;findImage(product.images[0].url,&#32;'large')&#32;+&#32;'" width="100%" /></a></li>');
+            if (i == 5) 
+                return false;
+          });
+        });
+      });
+    </script>
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Home - Notes from the Tribe</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="../../styles/base.css">
+	<link rel="stylesheet" href="../../styles/skeleton.css">
+	<link rel="stylesheet" href="../../styles/layout.css">
+	<link rel="stylesheet" href="../../styles/style.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== 
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+        -->
+
+</head>
+<body id="page">
+    <section class="main-nav">
+    <div class="container">
+    <nav role="main" class="main sixteen columns alpha">
+        <ul class="offset-by-four twelve columns alpha">
+            <li class="two columns alpha"><a href="../home/index.html">Home</a></li>
+            <li class="two columns"><a href="../about/index.html">About</a></li>
+            <li class="two columns"><a href="http://store.notesfromthetribe.com">Store</a></li>
+            <li class="two columns"><a href="../gallery/index.html">Art</a></li>
+            <li class="two columns omega"><a href="http://notesfromthetribe.tumblr.com">Blog</a></li>
+        </ul>
+    </nav>
+    </div>
+    </section>
+	<div class="container">
+
+   <section class="four columns alpha general">
+<a href="../../index.html">
+      <img src="../../img/notes_logo.jpg" alt="Notes from the tribe" />
+    </a>
+    <img src="../../img/title.jpg" alt="The art of William Deutsch" />
+        <dl class="four columns alpha contact">
+            <dt>Phone</dt>
+            <dd class="four columns alpha phone"><a href="tel:+1-949-275-0654">949.275.0654</a></dd>
+            <dt>Email</dt>
+            <dd class="four columns alpha"><a href="mailto:crydrawcry@gmail.com">crydrawcry@gmail.com</a></dd>
+        </dl>
+
+        <nav class="social four columns alpha">
+            <ul class="four columns alpha">
+                <li class="one column alpha twitter"><a href="http://twitter.com/#!/willdeutsch">Twitter</a></li>
+                <li class="one column facebook"><a href="http://www.facebook.com/pages/Notes-From-The-Tribe/189786858686">Facebook</a></li>
+                <li class="one column tumblr"><a href="http://notesfromthetribe.tumblr.com">Tumblr</a></li>
+                <li class="one column cargo-collective omega"><a href="http://cargocollective.com/notesfromthetribe">Cargo Collective</a></li>
+            </ul>
+        </nav>
+
+        <h3 class="new-to-store-title four columns alpha">New to the Store</h3>
+        <ul id="products" class="four columns alpha store">
+            </ul>
+    </section>
+<section class="ten columns omega">
+
+
+				    <img src="../../images/uploads/will_deutsch_samson_and_delilah_jewish_art.jpg" style="border: 0;" alt="image" width="580" height="770" />
+
+
+<h4 class="post-title twelve columns alpha"><a href="../home/entry/samson_and_delilah/index.html" class="ten columns alpha"><span>Notes from</span> <time>09.05.14</time></a></h4>
+			
+			<p>	
+				  <p>Amanda liked Morrissey, so I liked Morrisey too.<br />
+Or at least I told her I did.<br />
+The lie began as harmless banter on our first date.<br />
+She told me how much she loved the Smiths and I casually agreed they were &#8216;great&#8217;.<br />
+&#8216;Really?! You&#8217;re a fan!?&#8217; She responded excitedly. <br />
+Seeing as how I&#8217;d been called out and how thrilled she was, it seemed only natural to affirm my opinion. &#8216;OhYeah! They&#8217;re awesome!&#8217;<br />
+&#8216;Well which song is your favorite?&#8217; she beamed.<br />
+&#8216;Uh, man they&#8217;re all so good. Its just the sincerity of the performance you know?&#8217; It was a diplomatic choice.<br />
+&#8216;I know right!?! But the way he asks &#8216;Why do you come here?&#8217; In Suedehead just breaks my heart every time. I love it.&#8217;&nbsp; She clutched her chest as she imagined hearing it.<br />
+I nodded in agreement and quickly changed the subject.<br />
+6 dates later she greeted me with a C.D. labeled &#8216;Amanda&#8217;s Super Awesome Song Mix&#8217;.&nbsp; Hearts and lightning bolts drawn in sharpie adorned its surface.<br />
+We got in my car and she slid it into the player. &#8216;Turn it to number 5.&#8217; She said with a knowing grin.<br />
+A warbled Irish Falsetto began pouring out of the speakers as I stared in horror at the sight of her singing every word of &#8216;Every Day is Like Sunday&#8217; and motioning for me to do the same.<br />
+I panicked and began mumbling something between lyrics and a low hum. Amanda was engrossed and didn&#8217;t seem to notice.<br />
+It went on like this for weeks. More mixes. More songs I&#8217;d never heard and pretended to love.<br />
+Then came my birthday.<br />
+I wanted to go camping with my friends. Amanda hated camping and my friends. Besides, she had other plans for us.<br />
+Two tickets to Morrissey live at the L.A. Sports Arena.<br />
+It was like opening an ill fitting hand knit sweater in front of my Grandmother.<br />
+&#8216;I can&#8217;t wait!&#8217; I said a little too enthusiastically.<br />
+The concert was two weeks away and I knew about 3 songs. I was going to have to do some serious homework. <br />
+I went on the forums and after reading up on his discography, purchased &#8216;Southpaw Grammar&#8217; and &#8216;Viva Hate&#8217; on vinyl.<br />
+I knew 20 songs and a slew of wikipedia facts well enough to get through one evening. <br />
+In a 2 hour set he played roughly 4 of them.&nbsp; <br />
+During the others I was left bobbing my head, waiting until the chorus to chime in.<br />
+I think it had become apparent to my lady friend that I had used the term &#8216;fan&#8217; loosely.<br />
+We broke up a few months later.<br />
+The music was just a part of it. A symptom of something larger.<br />
+It was the person that I was around her, or rather the person that I wasn&#8217;t.<br />
+She was serious so I was serious too.<br />
+She liked drinking all the time so I became a lush. <br />
+She didn&#8217;t like that I spent so much time on my art so I spent less time drawing.<br />
+You get the picture.<br />
+I didn&#8217;t recognize myself.<br />
+But let me be clear here: the fault was completely mine.<br />
+I allowed myself to give up all the things that made me strong because I was taken with a pretty face.<br />
+This is a theme as old as any love song about a woman ever written.<br />
+In fact, the Smiths wrote one called &#8216;Wonderful Woman&#8217;. <br />
+Its actually kind of nice.
+</p>
+</p>
+
+
+
+<nav>
+    <ul class="posts-nav ten columns alpha">
+<li class="three columns alpha">
+
+<a href="../P8/index.html" class="previous"><span>Previous<br /> Drawing</span></a>
+
+</li>
+<li class="four columns"><a href="../home/archives/index.html" title="Archives">Archives</a></li>
+<li class="three columns omega">
+
+<a href="../P6/index.html" class="next"><span>Next <br />drawing</span></a>
+
+</li>
+
+
+
+
+  
+			</section>
+        <section class="two columns omega"></section>
+    <footer class="fourteen columns alpha">
+  <ul class="footer fourteen columns alpha">
+        <li class="copyright ten columns alpha"><span>© 2012</span> William Deutsch</li>
+        <li class="thinkingaboutawesome four columns omega">Designed by <a href="http://mrmrs.cc" title="San Francisco Design">mrmrs</a></li>
+    </ul>
+<div class="fourteen columns alpha six-points">
+<div class="one columns alpha">
+        <img src="../../img/6points.png" width="40px" />
+</div>
+<p class="twelve columns omega">
+ The Six Points Fellowship for Emerging Jewish Artists is a program of the FJC,
+        originally founded in partnership with Avoda Arts, and JDub, with significant
+        funding from The Jewish Federation of Greater Los Angeles, the Jewish Community
+        Foundation of Los Angeles, and the Righteous Persons Foundation.</p>
+</div>   
+    </footer>
+	</div><!-- container -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-11220684-1");
+pageTracker._setDomainName(".notesfromthetribe.com");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+  <script type="text/javascript" src="http://use.typekit.com/cmy5lgf.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js" type="text/javascript"></script>
+  <script type="text/javascript" charset="utf-8">
+      var subdomain = 'notesfromthetribe';
+      $(function() {
+        function findImage(url, size) {
+              if(!size) return url;
+              var ext = url.match(/\.(\w{2,4}$)/)[1];
+              var dir = url.substr(0, url.lastIndexOf('/') + 1);
+              switch(size.toLowerCase()) {
+                  case 'large':
+                      return dir + '300.' + ext;
+                  case 'medium':
+                      return dir + '175.' + ext;
+                  case 'thumb':
+                      return dir + '75.' + ext;
+                  default:
+                      return url;
+              }
+        }
+        $.getJSON('http://api.bigcartel.com/' + subdomain + '/products.js?callback=?', function(products) {
+          $.each(products, function(i, product) {
+            $('#products').append('<li class="four columns alpha"><a class="four columns alpha" href="http://' + subdomain + '.bigcartel.com' + product.url + '"><img src="'&#32;+&#32;findImage(product.images[0].url,&#32;'large')&#32;+&#32;'" width="100%" /></a></li>');
+            if (i == 5) 
+                return false;
+          });
+        });
+      });
+    </script>
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Home - Notes from the Tribe</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="../../../styles/base.css">
+	<link rel="stylesheet" href="../../../styles/skeleton.css">
+	<link rel="stylesheet" href="../../../styles/layout.css">
+	<link rel="stylesheet" href="../../../styles/style.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== 
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+        -->
+
+</head>
+<body id="page">
+    <section class="main-nav">
+    <div class="container">
+    <nav role="main" class="main sixteen columns alpha">
+        <ul class="offset-by-four twelve columns alpha">
+            <li class="two columns alpha"><a href="../index.html">Home</a></li>
+            <li class="two columns"><a href="../../about/index.html">About</a></li>
+            <li class="two columns"><a href="http://store.notesfromthetribe.com">Store</a></li>
+            <li class="two columns"><a href="../../gallery/index.html">Art</a></li>
+            <li class="two columns omega"><a href="http://notesfromthetribe.tumblr.com">Blog</a></li>
+        </ul>
+    </nav>
+    </div>
+    </section>
+	<div class="container">
+
+   <section class="four columns alpha general">
+<a href="../../../index.html">
+      <img src="../../../img/notes_logo.jpg" alt="Notes from the tribe" />
+    </a>
+    <img src="../../../img/title.jpg" alt="The art of William Deutsch" />
+        <dl class="four columns alpha contact">
+            <dt>Phone</dt>
+            <dd class="four columns alpha phone"><a href="tel:+1-949-275-0654">949.275.0654</a></dd>
+            <dt>Email</dt>
+            <dd class="four columns alpha"><a href="mailto:crydrawcry@gmail.com">crydrawcry@gmail.com</a></dd>
+        </dl>
+
+        <nav class="social four columns alpha">
+            <ul class="four columns alpha">
+                <li class="one column alpha twitter"><a href="http://twitter.com/#!/willdeutsch">Twitter</a></li>
+                <li class="one column facebook"><a href="http://www.facebook.com/pages/Notes-From-The-Tribe/189786858686">Facebook</a></li>
+                <li class="one column tumblr"><a href="http://notesfromthetribe.tumblr.com">Tumblr</a></li>
+                <li class="one column cargo-collective omega"><a href="http://cargocollective.com/notesfromthetribe">Cargo Collective</a></li>
+            </ul>
+        </nav>
+
+        <h3 class="new-to-store-title four columns alpha">New to the Store</h3>
+        <ul id="products" class="four columns alpha store">
+            </ul>
+    </section>
+<section class="ten columns omega">
+
+
+				    <img src="../../../images/uploads/will_deutsch_jewish_art_4_sons_passover.jpg" style="border: 0;" alt="image" width="580" height="770" />
+
+
+<h4 class="post-title twelve columns alpha"><a href="../entry/four_sons/index.html" class="ten columns alpha"><span>Notes from</span> <time>09.05.14</time></a></h4>
+			
+			<p>	
+				  <p>My Father was one of four brothers.<br />
+He often felt like the black sheep of the family.<br />
+Whether this was actually true or not I&#8217;ll never know, but he had a habit of bringing it up every Passover when the topic of the four sons came up. For the unacquainted:&nbsp; The Passover story mentions four sons: one who is wise, one who is wicked, one who is simple and one that doesn&#8217;t even know how to ask a question.<br />
+&#8216;Can you guess which one my family thought I was?&#8217; My Father would ask each year with a wry grin.<br />
+This was usually followed with a bout of polite silence from dinner guests who didn&#8217;t want to answer the rhetorical question.<br />
+&#8216;The Wicked one Papa&#8217; one of us would say so as to break the tension.<br />
+&#8216;That&#8217;s right.&#8217; Then he&#8217;d flash a knowing glance across the table and continue reading. <br />
+It was a Deutsch family tradition.<br />
+I think for him it was a badge of honor. A way of feeling secure about what he saw as his place. <br />
+He was, after all not what people would necessarily define as &#8216;likable&#8217;.&nbsp; To be clear I liked him very much, but social graces were not his strong suit. More like an ill fitting one that he constantly struggled to wear. <br />
+The problem was that he was often vocally right about things that people were perfectly comfortable being wrong about. It was the engineer in him. He&#8217;d find the problem you didn&#8217;t ask to be fixed. Always well meaning and often ill received. The kind of man who would sit in the corner at a party waiting for something to break so he could brandish his Leatherman and go to work.<br />
+But back to the story of the 4 sons.<br />
+By labeling himself as &#8216;wicked&#8217; my Father was affirming his position as an outsider. Something apart from the other three.&nbsp; This was how he felt and for him this was true. <br />
+My interpretation of the story however is quite different.<br />
+The way I see it, the interesting thing about this story is that even though the wicked son is contrary, he is never asked to leave the table.<br />
+He&#8217;s part of the Seder. Not only is he not excluded, he&#8217;s included. He serves an integral purpose.&nbsp; <br />
+So what then?<br />
+Go with me on this. <br />
+This story, like the others in the Haggadah is a metaphor. Here we have four sons with four different ways of looking at the same old tale. But lets imagine for a second that these four sons represent the 4 stages of development that we all go through in our own belief systems.<br />
+We all start off as infants. Unable to ask our own questions.<br />
+When we grow into childhood, we are like simple son. We believe the stories that we&#8217;re told. Whether its the tooth fairy or some sort of internalized belief system. We may wrestle with certain facts, but the deeper implications and nuances are often lost. <br />
+But its not until we become mature critical thinkers that we are able to question what has been put before us.&nbsp; It is in this fertile stage that we are able to reject certain illusions and falsehoods. Only through the skepticism that comes with &#8216;wickedness&#8217; is it possible reach a stage of true wisdom and understanding.<br />
+But this brings me to the fifth character of this saga. <br />
+The Father.<br />
+He is the man who sits at the table with his four quarreling sons and allows them each their own unique opinion while giving them firm boundaries. <br />
+This was the man my own Father actually was.<br />
+Somebody who gave me a framework that allowed for my own questioning, doubts and ultimate growth as human being.<br />
+That said, If he were to hear that today I don&#8217;t know that he&#8217;d agree.<br />
+I&#8217;m sure he&#8217;d be flattered, but I don&#8217;t know that he&#8217;d buy it.<br />
+After all, he was contrary.
+</p>
+</p>
+
+
+
+<nav>
+    <ul class="posts-nav ten columns alpha">
+<li class="three columns alpha">
+
+<a href="http://notesfromthetribe.com/index.php/home/ + findImage&#40;product.images[0].url, large&#41; + /P6/" class="previous"><span>Previous<br /> Drawing</span></a>
+
+</li>
+<li class="four columns"><a href="../archives/index.html" title="Archives">Archives</a></li>
+<li class="three columns omega">
+
+<a href="http://notesfromthetribe.com/index.php/home/ + findImage&#40;product.images[0].url, large&#41; + /P4/" class="next"><span>Next <br />drawing</span></a>
+
+</li>
+
+
+
+
+  
+			</section>
+        <section class="two columns omega"></section>
+    <footer class="fourteen columns alpha">
+  <ul class="footer fourteen columns alpha">
+        <li class="copyright ten columns alpha"><span>© 2012</span> William Deutsch</li>
+        <li class="thinkingaboutawesome four columns omega">Designed by <a href="http://mrmrs.cc" title="San Francisco Design">mrmrs</a></li>
+    </ul>
+<div class="fourteen columns alpha six-points">
+<div class="one columns alpha">
+        <img src="../../../img/6points.png" width="40px" />
+</div>
+<p class="twelve columns omega">
+ The Six Points Fellowship for Emerging Jewish Artists is a program of the FJC,
+        originally founded in partnership with Avoda Arts, and JDub, with significant
+        funding from The Jewish Federation of Greater Los Angeles, the Jewish Community
+        Foundation of Los Angeles, and the Righteous Persons Foundation.</p>
+</div>   
+    </footer>
+	</div><!-- container -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-11220684-1");
+pageTracker._setDomainName(".notesfromthetribe.com");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

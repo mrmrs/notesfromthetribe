@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+  <script type="text/javascript" src="http://use.typekit.com/cmy5lgf.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js" type="text/javascript"></script>
+  <script type="text/javascript" charset="utf-8">
+      var subdomain = 'notesfromthetribe';
+      $(function() {
+        function findImage(url, size) {
+              if(!size) return url;
+              var ext = url.match(/\.(\w{2,4}$)/)[1];
+              var dir = url.substr(0, url.lastIndexOf('/') + 1);
+              switch(size.toLowerCase()) {
+                  case 'large':
+                      return dir + '300.' + ext;
+                  case 'medium':
+                      return dir + '175.' + ext;
+                  case 'thumb':
+                      return dir + '75.' + ext;
+                  default:
+                      return url;
+              }
+        }
+        $.getJSON('http://api.bigcartel.com/' + subdomain + '/products.js?callback=?', function(products) {
+          $.each(products, function(i, product) {
+            $('#products').append('<li class="four columns alpha"><a class="four columns alpha" href="http://' + subdomain + '.bigcartel.com' + product.url + '"><img src="'&#32;+&#32;findImage(product.images[0].url,&#32;'large')&#32;+&#32;'" width="100%" /></a></li>');
+            if (i == 5) 
+                return false;
+          });
+        });
+      });
+    </script>
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Home - Notes from the Tribe</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="../../styles/base.css">
+	<link rel="stylesheet" href="../../styles/skeleton.css">
+	<link rel="stylesheet" href="../../styles/layout.css">
+	<link rel="stylesheet" href="../../styles/style.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== 
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+        -->
+
+</head>
+<body id="page">
+    <section class="main-nav">
+    <div class="container">
+    <nav role="main" class="main sixteen columns alpha">
+        <ul class="offset-by-four twelve columns alpha">
+            <li class="two columns alpha"><a href="../home/index.html">Home</a></li>
+            <li class="two columns"><a href="../about/index.html">About</a></li>
+            <li class="two columns"><a href="http://store.notesfromthetribe.com">Store</a></li>
+            <li class="two columns"><a href="../gallery/index.html">Art</a></li>
+            <li class="two columns omega"><a href="http://notesfromthetribe.tumblr.com">Blog</a></li>
+        </ul>
+    </nav>
+    </div>
+    </section>
+	<div class="container">
+
+   <section class="four columns alpha general">
+<a href="../../index.html">
+      <img src="../../img/notes_logo.jpg" alt="Notes from the tribe" />
+    </a>
+    <img src="../../img/title.jpg" alt="The art of William Deutsch" />
+        <dl class="four columns alpha contact">
+            <dt>Phone</dt>
+            <dd class="four columns alpha phone"><a href="tel:+1-949-275-0654">949.275.0654</a></dd>
+            <dt>Email</dt>
+            <dd class="four columns alpha"><a href="mailto:crydrawcry@gmail.com">crydrawcry@gmail.com</a></dd>
+        </dl>
+
+        <nav class="social four columns alpha">
+            <ul class="four columns alpha">
+                <li class="one column alpha twitter"><a href="http://twitter.com/#!/willdeutsch">Twitter</a></li>
+                <li class="one column facebook"><a href="http://www.facebook.com/pages/Notes-From-The-Tribe/189786858686">Facebook</a></li>
+                <li class="one column tumblr"><a href="http://notesfromthetribe.tumblr.com">Tumblr</a></li>
+                <li class="one column cargo-collective omega"><a href="http://cargocollective.com/notesfromthetribe">Cargo Collective</a></li>
+            </ul>
+        </nav>
+
+        <h3 class="new-to-store-title four columns alpha">New to the Store</h3>
+        <ul id="products" class="four columns alpha store">
+            </ul>
+    </section>
+<section class="ten columns omega">
+
+
+				    <img src="../../images/uploads/Will_deutsch_jewish_art_shiva_death_judaism_jews.jpg" style="border: 0;" alt="image" width="580" height="770" />
+<a href="http://store.notesfromthetribe.com/product/jewish-art-8-5-x11-shiva-print" title="BUY PRINT">BUY PRINT</a>
+
+<h4 class="post-title twelve columns alpha"><a href="../home/entry/shiva/index.html" class="ten columns alpha"><span>Notes from</span> <time>06.20.13</time></a></h4>
+			
+			<p>	
+				  <p>There is never really a convenient time for somebody to die.<br />
+But when you&#8217;re Jewish, dying the day before Passover is especially inconvenient.<br />
+And that is exactly what my father did.<br />
+See, the thing about death is that there&#8217;s a lot of heavy lifting for those left behind.<br />
+In short: it&#8217;s a lot of work.<br />
+I received word from my mother that my father had left his earthly shell April 7th, 2009, right around 6am.<br />
+Her voice seemed formless on the other end of the phone. &#8216;Come down to the hospital. They haven&#8217;t taken his body yet. Its still warm under his arms.&#8217; She said it like I needed to grab a feel before it cooled.<br />
+I was tired. I was in shock and the thought that my father&#8217;s still warm body was waiting for me on the 8th floor of Hoag seemed altogether absurd.<br />
+And yet this was happening.<br />
+I&#8217;d spent the entire night before rearranging his bedroom with my brother so that we could move him from the cancer ward to a hospital bed in the house so he could die around the home he&#8217;d worked so tirelessly to create. <br />
+Now it seemed a futile final gesture.<br />
+I woke my brother with the news (minus the part about his arms) and informed him we had to get moving.<br />
+Looking back, my sense of urgency seems odd considering that my father wasn&#8217;t exactly going anywhere.<br />
+30 minutes or so later we arrived to find my father&#8217;s body without him in it. <br />
+They&#8217;d removed all life support systems. He actually looked better dead than he had alive. No tubes sticking out of his nose. No wires running the length of his appendages to incomprehensible monitors that beeped and bopped from time to time letting us know that his internal organs had not yet ceased. Even his face had relaxed from the contorted state of constant pain it had been in for the past 6 months. <br />
+Death suited him.<br />
+I&#8217;d never seen a cadaver before, let alone his. The sensation is comparable to that of walking down a flight of familiar stairs at night and at the very end misstepping into air because you have somehow miscounted an extra &#8216;phantom step&#8217;.&nbsp; It is the sudden and sheer terror of that moment when your experience undermines something that your brain has assured you of. The familiar, for the briefest of moments….simply isn&#8217;t.<br />
+The details were all in order. His facial hair. The slight indent between his eyes from a lifetime of of wearing glasses. The powerful, round, sausage like fingers that still gently pressed their tips against the bed as if at any moment he might push down on the mattress to right himself up.&nbsp; And yet, there was something less about him. Obviously. The undersides of his arms were indeed still warm, but his forehead was a cold that I had never felt.&nbsp; The kind that came from a lack of inner warmth rather than an outer chill.<br />
+On the table next to his bed was a three day old stale brownie with walnuts that had long since adhered itself to the plate so that when turned upside down it stuck. <br />
+An uneaten last meal. <br />
+We still had to get ahold of my sister up in Los Angeles. It was an hour drive. And so the work began. Rounding up the troops. Finding a ride for her. Calling person after person to let them know the world had turned on its axis.<br />
+I made sure we had breakfast.<br />
+This was going to be tough and I would be damned if we were going to do it on an empty stomach.<br />
+A young girl from catering came to check in on us. Gesturing to my father&#8217;s corpse, she inquired as to whether he&#8217;d like whole or skim milk. &#8216;He&#8217;s dead&#8217; my mother replied blankly. Visibly shaken, the teenage girl apologized and ducked out.<br />
+Those of us that could, ate Frosted Flakes while the hospital started making preparations of what to do with the body. <br />
+His palliative care doctor, a kind and what I perceived to be religious man, came in and thanked him for being a great patient as though he were still alive. He seemed wholly and completely unfazed that he was not.<br />
+A nurse reluctantly let us crack the door open so somebody could continually watch his body as it was zipped up in a bag and placed on a gurney. <br />
+We followed it in the elevator down eight floors.<br />
+Last stop…the coroner. Unlike the other sterile parts of the hospital which looked like they had been terribly chic in the mid 90&#8217;s with their southwestern topaz and burnt orange color palate this was a dull, grey, subterranean basement. The orderlies wheeled the gurney into a room next to an open closet filled with economy sized tubs of twizzlers, fritos, peanut m and m&#8217;s and countless other snack foods that fed the hospital population. I tried to keep watch only to have the door slammed in my face by a security guard.<br />
+Shortly thereafter, he apologized for the vehemence of his gesture as he promptly escorted my family with my father&#8217;s body bag in tow to a mortuary van waiting by the dumpsters in the back. <br />
+This was where the patients who didn&#8217;t live exited. Its discreetness seemed understandable. After all, if I were entering a hospital this is not the scene that would provide me with the most solace.<br />
+And then it was done.<br />
+We were finished for the day.<br />
+It felt like we had lost the big game.<br />
+We headed back to our cars losers.<br />
+We returned home and hit the ground running.<br />
+Preparations needed to be made. <br />
+The funeral home was contacted.<br />
+My mother would serve as clergy.<br />
+Pallbearers needed to be assigned.<br />
+We needed catering and a venue for the meal of comfort.<br />
+Dates, times and locations for the funeral and shiva minyan needed to be set.<br />
+Travel and accommodations needed to be made<br />
+The insurance could wait.<br />
+Aflac could wait.<br />
+We needed to call work and tell them we weren&#8217;t coming in.<br />
+I still had to write a eulogy.<br />
+My sister typed a general note that I copied and pasted to various online social networks.<br />
+Oh crap.<br />
+The house still needed to be cleaned.<br />
+Matzah and other kosher for Passover food needed to be purchased.<br />
+The fine china needed to be brought out.<br />
+We had to set up the extra table in the living room.<br />
+Haroset.<br />
+Burnt offering.<br />
+Horseradish.<br />
+A sixteen pound turkey.<br />
+We were having a seder.<br />
+We were having two seders.<br />
+And a funeral.<br />
+And a shiva minyan.<br />
+But not for five days.<br />
+After all, it was Passover and my father was dead.<br />
+Like I said, inconvenient.
+</p>
+</p>
+
+
+
+<nav>
+    <ul class="posts-nav ten columns alpha">
+<li class="three columns alpha">
+
+<a href="http://notesfromthetribe.com/index.php/ + findImage&#40;product.images[0].url, large&#41; + /P12/" class="previous"><span>Previous<br /> Drawing</span></a>
+
+</li>
+<li class="four columns"><a href="../home/archives/index.html" title="Archives">Archives</a></li>
+<li class="three columns omega">
+
+<a href="http://notesfromthetribe.com/index.php/ + findImage&#40;product.images[0].url, large&#41; + /P10/" class="next"><span>Next <br />drawing</span></a>
+
+</li>
+
+
+
+
+  
+			</section>
+        <section class="two columns omega"></section>
+    <footer class="fourteen columns alpha">
+  <ul class="footer fourteen columns alpha">
+        <li class="copyright ten columns alpha"><span>© 2012</span> William Deutsch</li>
+        <li class="thinkingaboutawesome four columns omega">Designed by <a href="http://mrmrs.cc" title="San Francisco Design">mrmrs</a></li>
+    </ul>
+<div class="fourteen columns alpha six-points">
+<div class="one columns alpha">
+        <img src="../../img/6points.png" width="40px" />
+</div>
+<p class="twelve columns omega">
+ The Six Points Fellowship for Emerging Jewish Artists is a program of the FJC,
+        originally founded in partnership with Avoda Arts, and JDub, with significant
+        funding from The Jewish Federation of Greater Los Angeles, the Jewish Community
+        Foundation of Los Angeles, and the Righteous Persons Foundation.</p>
+</div>   
+    </footer>
+	</div><!-- container -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-11220684-1");
+pageTracker._setDomainName(".notesfromthetribe.com");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

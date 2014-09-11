@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+  <script type="text/javascript" src="http://use.typekit.com/cmy5lgf.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js" type="text/javascript"></script>
+  <script type="text/javascript" charset="utf-8">
+      var subdomain = 'notesfromthetribe';
+      $(function() {
+        function findImage(url, size) {
+              if(!size) return url;
+              var ext = url.match(/\.(\w{2,4}$)/)[1];
+              var dir = url.substr(0, url.lastIndexOf('/') + 1);
+              switch(size.toLowerCase()) {
+                  case 'large':
+                      return dir + '300.' + ext;
+                  case 'medium':
+                      return dir + '175.' + ext;
+                  case 'thumb':
+                      return dir + '75.' + ext;
+                  default:
+                      return url;
+              }
+        }
+        $.getJSON('http://api.bigcartel.com/' + subdomain + '/products.js?callback=?', function(products) {
+          $.each(products, function(i, product) {
+            $('#products').append('<li class="four columns alpha"><a class="four columns alpha" href="http://' + subdomain + '.bigcartel.com' + product.url + '"><img src="'&#32;+&#32;findImage(product.images[0].url,&#32;'large')&#32;+&#32;'" width="100%" /></a></li>');
+            if (i == 5) 
+                return false;
+          });
+        });
+      });
+    </script>
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Home - Notes from the Tribe</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="../../../../styles/base.css">
+	<link rel="stylesheet" href="../../../../styles/skeleton.css">
+	<link rel="stylesheet" href="../../../../styles/layout.css">
+	<link rel="stylesheet" href="../../../../styles/style.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== 
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+        -->
+
+</head>
+<body id="page">
+    <section class="main-nav">
+    <div class="container">
+    <nav role="main" class="main sixteen columns alpha">
+        <ul class="offset-by-four twelve columns alpha">
+            <li class="two columns alpha"><a href="../../index.html">Home</a></li>
+            <li class="two columns"><a href="../../../about/index.html">About</a></li>
+            <li class="two columns"><a href="http://store.notesfromthetribe.com">Store</a></li>
+            <li class="two columns"><a href="../../../gallery/index.html">Art</a></li>
+            <li class="two columns omega"><a href="http://notesfromthetribe.tumblr.com">Blog</a></li>
+        </ul>
+    </nav>
+    </div>
+    </section>
+	<div class="container">
+
+    <section class="four columns alpha general">
+   <a href="../../../../index.html">
+      <img src="../../../../img/notes_logo.jpg" />
+    </a>
+    <img src="../../../../img/title.jpg" alt="Notes from the Tribe" />
+        <dl class="four columns alpha contact">
+            <dt>Phone</dt>
+            <dd class="four columns alpha phone"><a href="tel:+1-949-275-0654">949.275.0654</a></dd>
+            <dt>Email</dt>
+            <dd class="four columns alpha"><a href="mailto:crydrawcry@gmail.com">crydrawcry@gmail.com</a></dd>
+        </dl>
+
+        <nav class="social four columns alpha">
+            <ul class="four columns alpha">
+                <li class="one column alpha twitter"><a href="http://twitter.com/#!/willdeutsch">Twitter</a></li>
+                <li class="one column facebook"><a href="http://www.facebook.com/pages/Notes-From-The-Tribe/189786858686">Facebook</a></li>
+                <li class="one column tumblr"><a href="http://notesfromthetribe.tumblr.com">Tumblr</a></li>
+                <li class="one column cargo-collective omega"><a href="http://cargocollective.com/notesfromthetribe">Cargo Collective</a></li>
+            </ul>
+        </nav>
+
+        <h3 class="new-to-store-title four columns alpha">New to the Store</h3>
+        <ul id="products" class="four columns alpha store">
+            </ul>
+    </section>
+<section class="ten columns omega">
+
+				    <img src="../../../../images/uploads/will_deutsch_jewish_art_challah_shabbat_jews.jpg" style="border: 0;" alt="image" width="500" height="671" />
+
+<nav>
+    <ul class="posts-nav ten columns alpha">
+<li class="three columns alpha">
+
+					<a href="../vidui/index.html" class="previous"><span>Previous <br />drawing<span></a>
+
+</li>
+
+<li class="four columns buy"><a href="http://store.notesfromthetribe.com/product/8-5x11-challah-print" title="BUY PRINT">BUY PRINT</a></a></li>
+
+<li class="three columns omega">
+ 
+				<a href="../bathsheba/index.html" class="next"><span>Next<br /> drawing</span></a>	
+				
+				
+</li>
+</ul>
+</nav>
+
+<h4 class="post-title ten columns alpha"><span>Notes from</span> <time>10.12.10</time></h4>
+			
+			<p>	
+				  <p>&nbsp;  Perhaps Rap&#8217;s biggest contribution to the spoken word was the phonic device &#8216;ah&#8217;.&nbsp; This tool made it possible to rhyme words that end in -er with words that end in  -ou and occasionally could be used to create entirely new words. For example in Jay-Z&#8217;s 1998 single &#8216;Can I Get A…&#8217; he speaks the following words:<br />
+&#8220;Do you need a ball-ah<br />
+To go shopping at the mall-ah<br />
+Brag, tell your friends what I bought y-ah&#8221;<br />
+Brilliantly, three dissimilar words are brought together by one sound. Unfortunately, I am not rapper.&nbsp; As this is the case I found it very hard to rhyme anything with &#8216;Challah&#8217;, save for one word in the second to last line of the following sonnet I wrote:</p>
+
+<p>Oh delicious loaves of braided bread<br />
+Both are uncovered on Friday night as a group<br />
+And are quickly torn apart instead <br />
+To be used as mops for sauce and soup<br />
+Come Saturday morning there is only one loaf left<br />
+It will get exactly what it deserves<br />
+So into slices it is cleft <br />
+and covered with butter and preserves<br />
+After all of this, should any remain<br />
+Remember to keep it in boxes or bags with covers<br />
+By all means do not refrain<br />
+From using it to make sandwiches with leftovers.<br />
+Whether you enjoy Kabbalat Shabbat, the torah service or Havdallah<br />
+Come the weekend, it&#8217;s hard to argue with a good ol&#8217; piece of Challah.</p>
+
+
+</p>
+
+
+  
+			</section>
+<section class="two columns omega"> </section>
+     <footer class="fourteen columns alpha">
+  <ul class="footer fourteen columns alpha">
+        <li class="copyright ten columns alpha"><span>© 2012</span> William Deutsch</li>
+        <li class="thinkingaboutawesome four columns omega">Designed by <a href="http://mrmrs.cc" title="San Francisco Design">mrmrs</a></li>
+    </ul>
+<div class="fourteen columns alpha six-points">
+<div class="one columns alpha">
+        <img src="../../../../img/6points.png" width="40px" />
+</div>
+<p class="twelve columns omega">
+ The Six Points Fellowship for Emerging Jewish Artists is a program of the FJC,
+        originally founded in partnership with Avoda Arts, and JDub, with significant
+        funding from The Jewish Federation of Greater Los Angeles, the Jewish Community
+        Foundation of Los Angeles, and the Righteous Persons Foundation.</p>
+</div>   
+    </footer>
+</div> <!-- container -->
+
+			
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-11220684-1");
+pageTracker._setDomainName(".notesfromthetribe.com");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

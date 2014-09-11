@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+  <script type="text/javascript" src="http://use.typekit.com/cmy5lgf.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js" type="text/javascript"></script>
+  <script type="text/javascript" charset="utf-8">
+      var subdomain = 'notesfromthetribe';
+      $(function() {
+        function findImage(url, size) {
+              if(!size) return url;
+              var ext = url.match(/\.(\w{2,4}$)/)[1];
+              var dir = url.substr(0, url.lastIndexOf('/') + 1);
+              switch(size.toLowerCase()) {
+                  case 'large':
+                      return dir + '300.' + ext;
+                  case 'medium':
+                      return dir + '175.' + ext;
+                  case 'thumb':
+                      return dir + '75.' + ext;
+                  default:
+                      return url;
+              }
+        }
+        $.getJSON('http://api.bigcartel.com/' + subdomain + '/products.js?callback=?', function(products) {
+          $.each(products, function(i, product) {
+            $('#products').append('<li class="four columns alpha"><a class="four columns alpha" href="http://' + subdomain + '.bigcartel.com' + product.url + '"><img src="'&#32;+&#32;findImage(product.images[0].url,&#32;'large')&#32;+&#32;'" width="100%" /></a></li>');
+            if (i == 5) 
+                return false;
+          });
+        });
+      });
+    </script>
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Home - Notes from the Tribe</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="../../../../styles/base.css">
+	<link rel="stylesheet" href="../../../../styles/skeleton.css">
+	<link rel="stylesheet" href="../../../../styles/layout.css">
+	<link rel="stylesheet" href="../../../../styles/style.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== 
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+        -->
+
+</head>
+<body id="page">
+    <section class="main-nav">
+    <div class="container">
+    <nav role="main" class="main sixteen columns alpha">
+        <ul class="offset-by-four twelve columns alpha">
+            <li class="two columns alpha"><a href="../../index.html">Home</a></li>
+            <li class="two columns"><a href="../../../about/index.html">About</a></li>
+            <li class="two columns"><a href="http://store.notesfromthetribe.com">Store</a></li>
+            <li class="two columns"><a href="../../../gallery/index.html">Art</a></li>
+            <li class="two columns omega"><a href="http://notesfromthetribe.tumblr.com">Blog</a></li>
+        </ul>
+    </nav>
+    </div>
+    </section>
+	<div class="container">
+
+    <section class="four columns alpha general">
+   <a href="../../../../index.html">
+      <img src="../../../../img/notes_logo.jpg" />
+    </a>
+    <img src="../../../../img/title.jpg" alt="Notes from the Tribe" />
+        <dl class="four columns alpha contact">
+            <dt>Phone</dt>
+            <dd class="four columns alpha phone"><a href="tel:+1-949-275-0654">949.275.0654</a></dd>
+            <dt>Email</dt>
+            <dd class="four columns alpha"><a href="mailto:crydrawcry@gmail.com">crydrawcry@gmail.com</a></dd>
+        </dl>
+
+        <nav class="social four columns alpha">
+            <ul class="four columns alpha">
+                <li class="one column alpha twitter"><a href="http://twitter.com/#!/willdeutsch">Twitter</a></li>
+                <li class="one column facebook"><a href="http://www.facebook.com/pages/Notes-From-The-Tribe/189786858686">Facebook</a></li>
+                <li class="one column tumblr"><a href="http://notesfromthetribe.tumblr.com">Tumblr</a></li>
+                <li class="one column cargo-collective omega"><a href="http://cargocollective.com/notesfromthetribe">Cargo Collective</a></li>
+            </ul>
+        </nav>
+
+        <h3 class="new-to-store-title four columns alpha">New to the Store</h3>
+        <ul id="products" class="four columns alpha store">
+            </ul>
+    </section>
+<section class="ten columns omega">
+
+				    <img src="../../../../images/uploads/jewish_art_will_deutsch_judaism_jews_the_deception_of_isaac_torah.jpg" style="border: 0;" alt="image" width="500" height="670" />
+
+<nav>
+    <ul class="posts-nav ten columns alpha">
+<li class="three columns alpha">
+
+					<a href="../mechitza/index.html" class="previous"><span>Previous <br />drawing<span></a>
+
+</li>
+
+<li class="four columns buy"><a href="http://store.notesfromthetribe.com/product/jewish-art-8-5-x11-the-deception-of-isaac-print" title="BUY PRINT">BUY PRINT</a></a></li>
+
+<li class="three columns omega">
+ 
+				<a href="../chanuka_mobile/index.html" class="next"><span>Next<br /> drawing</span></a>	
+				
+				
+</li>
+</ul>
+</nav>
+
+<h4 class="post-title ten columns alpha"><span>Notes from</span> <time>12.19.11</time></h4>
+			
+			<p>	
+				  <p>My best friend in kindergarten, David, was a latch key kid and I envied him.<br />
+Unlike my video game-less Orwellian household where my every move was discriminated, David had an endless supply of Super Nintendo and G.I. Joe&#8217;s to keep him company. <br />
+I used to love going to his house after school.<br />
+His Dad was a long haul trucker and his Mother worked, so the only adult there was his housekeeper, Rosa.<br />
+Without the watchful eye of authority, the world was ours.<br />
+We&#8217;d build forts in the living room, have water balloon fights in the bathroom and occasionally climb the fence into the elementary school up the street. <br />
+The best part was the food.<br />
+Chef Boyardee straight from the can.<br />
+Frozen Hungry Man Dinners.<br />
+My favorite was  Jif Peanut Butter.<br />
+I was told that &#8216;Choosy Moms Choose Jif&#8217; but my Mother didn&#8217;t seem to be all that discerning as she gave me organic unsalted peanut paste that was barely suitable for spreading on the sprouted wheat rice cake I got every day for lunch.<br />
+But Jif between two slices of Wonder Bread tasted like freedom.<br />
+Needless to say David was a bad influence.<br />
+If my parents had been aware of what was going on surely they would not have approved.&nbsp; We were able to keep the ruse of a well supervised environment up for the entirety of the school year until that fateful Summer day we went too far.<br />
+The house was dry.&nbsp; No T.V. dinners, no canned goods…no Jif.<br />
+It was lunchtime and without parents to replenish our food stores we were hungry. <br />
+David had a plan. <br />
+In the top drawer of his father&#8217;s nightstand was a supply of petty cash and up the street was a 7-11 with a two for one deal on big bite hot dogs.<br />
+We split six of them and let the man at the counter keep the change.<br />
+It tastes delicious when you don&#8217;t know how its made.<br />
+It was the first time I had ever eaten pork outside my Father&#8217;s company and there was no way I was going to tell my parents.<br />
+That night my Mother found a ketchup stain on the sleeve of my Member&#8217;s Only jacket.<br />
+&#8216;What&#8217;s this from?&#8217; She asked.<br />
+&#8216;Its from….uh…..we….its from french fries I had at David&#8217;s house….&#8217;&nbsp; I lied.<br />
+&#8216;I see……is that really what happened?&#8217; <br />
+I broke down.<br />
+She called David&#8217;s Mom.<br />
+I never went over there again.<br />
+The point is this: you can lie to your parents…you can tell them you ate french fries…or you can wear a goatskin in order to convince them that you are their hairy first born son in order to receive their blessing…….but  you can&#8217;t fool them.<br />
+Isaac knew. He was blind but he wasn&#8217;t dumb.<br />
+As soon as Jacob comes in the room dressed like his brother, Isaac exclaims that the voice is that of his second born. Then he questions Jacob as to who he is and how he got there so quickly.&nbsp; <br />
+Sure, Jacob lies to his father but are we really to believe that Isaac is going to be taken in by an animal hide disguise?&nbsp; I mean I know Esau was supposed to be rough and hairy but nobody&#8217;s skin feels like fur. <br />
+Isaac knew and he gave the blessing anyway because Esau had married a foreign woman but the blessing was supposed to go to the son who would create a chosen nation from his descendants.<br />
+But with this convincing alibi, Isaac could still preserve his relationship with Esau in spite of giving away his birthright.<br />
+All I&#8217;m saying is biblical or not, a Jewish parent knows.
+</p>
+</p>
+
+
+  
+			</section>
+<section class="two columns omega"> </section>
+     <footer class="fourteen columns alpha">
+  <ul class="footer fourteen columns alpha">
+        <li class="copyright ten columns alpha"><span>© 2012</span> William Deutsch</li>
+        <li class="thinkingaboutawesome four columns omega">Designed by <a href="http://mrmrs.cc" title="San Francisco Design">mrmrs</a></li>
+    </ul>
+<div class="fourteen columns alpha six-points">
+<div class="one columns alpha">
+        <img src="../../../../img/6points.png" width="40px" />
+</div>
+<p class="twelve columns omega">
+ The Six Points Fellowship for Emerging Jewish Artists is a program of the FJC,
+        originally founded in partnership with Avoda Arts, and JDub, with significant
+        funding from The Jewish Federation of Greater Los Angeles, the Jewish Community
+        Foundation of Los Angeles, and the Righteous Persons Foundation.</p>
+</div>   
+    </footer>
+</div> <!-- container -->
+
+			
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-11220684-1");
+pageTracker._setDomainName(".notesfromthetribe.com");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

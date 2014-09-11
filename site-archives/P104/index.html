@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+  <script type="text/javascript" src="http://use.typekit.com/cmy5lgf.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js" type="text/javascript"></script>
+  <script type="text/javascript" charset="utf-8">
+      var subdomain = 'notesfromthetribe';
+      $(function() {
+        function findImage(url, size) {
+              if(!size) return url;
+              var ext = url.match(/\.(\w{2,4}$)/)[1];
+              var dir = url.substr(0, url.lastIndexOf('/') + 1);
+              switch(size.toLowerCase()) {
+                  case 'large':
+                      return dir + '300.' + ext;
+                  case 'medium':
+                      return dir + '175.' + ext;
+                  case 'thumb':
+                      return dir + '75.' + ext;
+                  default:
+                      return url;
+              }
+        }
+        $.getJSON('http://api.bigcartel.com/' + subdomain + '/products.js?callback=?', function(products) {
+          $.each(products, function(i, product) {
+            $('#products').append('<li class="four columns alpha"><a class="four columns alpha" href="http://' + subdomain + '.bigcartel.com' + product.url + '"><img src="'&#32;+&#32;findImage(product.images[0].url,&#32;'large')&#32;+&#32;'" width="100%" /></a></li>');
+            if (i == 5) 
+                return false;
+          });
+        });
+      });
+    </script>
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Home - Notes from the Tribe</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="../../styles/base.css">
+	<link rel="stylesheet" href="../../styles/skeleton.css">
+	<link rel="stylesheet" href="../../styles/layout.css">
+	<link rel="stylesheet" href="../../styles/style.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== 
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+        -->
+
+</head>
+<body id="page">
+    <section class="main-nav">
+    <div class="container">
+    <nav role="main" class="main sixteen columns alpha">
+        <ul class="offset-by-four twelve columns alpha">
+            <li class="two columns alpha"><a href="../home/index.html">Home</a></li>
+            <li class="two columns"><a href="../about/index.html">About</a></li>
+            <li class="two columns"><a href="http://store.notesfromthetribe.com">Store</a></li>
+            <li class="two columns"><a href="../gallery/index.html">Art</a></li>
+            <li class="two columns omega"><a href="http://notesfromthetribe.tumblr.com">Blog</a></li>
+        </ul>
+    </nav>
+    </div>
+    </section>
+	<div class="container">
+
+   <section class="four columns alpha general">
+<a href="../../index.html">
+      <img src="../../img/notes_logo.jpg" alt="Notes from the tribe" />
+    </a>
+    <img src="../../img/title.jpg" alt="The art of William Deutsch" />
+        <dl class="four columns alpha contact">
+            <dt>Phone</dt>
+            <dd class="four columns alpha phone"><a href="tel:+1-949-275-0654">949.275.0654</a></dd>
+            <dt>Email</dt>
+            <dd class="four columns alpha"><a href="mailto:crydrawcry@gmail.com">crydrawcry@gmail.com</a></dd>
+        </dl>
+
+        <nav class="social four columns alpha">
+            <ul class="four columns alpha">
+                <li class="one column alpha twitter"><a href="http://twitter.com/#!/willdeutsch">Twitter</a></li>
+                <li class="one column facebook"><a href="http://www.facebook.com/pages/Notes-From-The-Tribe/189786858686">Facebook</a></li>
+                <li class="one column tumblr"><a href="http://notesfromthetribe.tumblr.com">Tumblr</a></li>
+                <li class="one column cargo-collective omega"><a href="http://cargocollective.com/notesfromthetribe">Cargo Collective</a></li>
+            </ul>
+        </nav>
+
+        <h3 class="new-to-store-title four columns alpha">New to the Store</h3>
+        <ul id="products" class="four columns alpha store">
+            </ul>
+    </section>
+<section class="ten columns omega">
+
+
+				    <img src="../../images/uploads/making_challah.jpg" style="border: 0;" alt="image" width="500" height="649" />
+<a href="http://store.notesfromthetribe.com/product/8-5x11-making-challah-print" title="BUY PRINT">BUY PRINT</a>
+
+<h4 class="post-title twelve columns alpha"><a href="../home/entry/making_challah/index.html" class="ten columns alpha"><span>Notes from</span> <time>01.10.10</time></a></h4>
+			
+			<p>	
+				  <p>If you could have tasted my mother&#8217;s challah in 1984, it would not have shocked anyone but her to know that a decade or so later she would be a Cantor.&nbsp; She began by removing her wedding ring. Next, the ingredients were measured and mixed, kneaded and braided, and baked into what became the crown jewel of Friday night dinners. The standard was poppy seed, occasionally sesame, and a few failed experiments with raisin and wheat.&nbsp;  Each was characterized by a crisp golden exterior which gave way to a soft buttery bliss.&nbsp; This was the bread that served as mops for sauce, a spoon for soup, and casing for midweek leftovers.&nbsp; Any person who can put that much ruach into a  loaf of dough is bound to find other outlets for it.&nbsp; So it came as no surprise when my mother announced that she would be serving as Rabbi for our congregation&#8217;s sisterhood Shabbat.&nbsp; The challah barely made it to the table that week, but her sermon was superb.&nbsp; She had discovered that her mastery of the sabbath extended outside the reaches of the kitchen.&nbsp; And when my great uncle, Cantor David Gordon passed away, it seemed only fitting that she should take up the mantle. However, being a woman Cantor in your 40&#8217;s with no formal training in the saturated market of Orange County where there are more gated communities than jewish people does not make things easy. So she hit the streets and started working the circuit.&nbsp; In addition to making delicious food each week, my mother began her training as an assistant Cantor at our synagogue, learning the ropes of leading prayer. Life was more or less how it had been before, I would get two loaves a week in return for sitting through what I considered to be unbearable drudgery at the time. But the people wanted more.&nbsp; Soon she was working paid gigs.&nbsp; Friday night stuff.&nbsp; The folks over at Villa Valencia wanted her to be their clergy in residence.&nbsp; It began to dawn on me that the cornucopia of carbohydrates was running dry.&nbsp; While I could look forward to the home cooked stuff now and again, the amount of preparation required for Kabbalat Shabbat meant that I was stuck with the occasional store-bought starch.&nbsp; Then came the big time.&nbsp; After a brief stint at B&#8217;nai Israel, and working for years as a part time spiritual advisor, my mother found her home as Cantor of Heritage Pointe.&nbsp; And I said hello to frozen challah.&nbsp; It&#8217;s not so bad though. In a way I was lucky. Some kids only get to hear services once a week. I got to hear them every day. All my friends had to go to the temple to learn their haftorah, I got to say mine every night for a year before I went to bed. Oh and the bread is pretty good too- once you toast it.
+</p>
+</p>
+
+
+
+<nav>
+    <ul class="posts-nav ten columns alpha">
+<li class="three columns alpha">
+
+<a href="../P105/index.html" class="previous"><span>Previous<br /> Drawing</span></a>
+
+</li>
+<li class="four columns"><a href="../home/archives/index.html" title="Archives">Archives</a></li>
+<li class="three columns omega">
+
+<a href="../P103/index.html" class="next"><span>Next <br />drawing</span></a>
+
+</li>
+
+
+
+
+  
+			</section>
+        <section class="two columns omega"></section>
+    <footer class="fourteen columns alpha">
+  <ul class="footer fourteen columns alpha">
+        <li class="copyright ten columns alpha"><span>© 2012</span> William Deutsch</li>
+        <li class="thinkingaboutawesome four columns omega">Designed by <a href="http://mrmrs.cc" title="San Francisco Design">mrmrs</a></li>
+    </ul>
+<div class="fourteen columns alpha six-points">
+<div class="one columns alpha">
+        <img src="../../img/6points.png" width="40px" />
+</div>
+<p class="twelve columns omega">
+ The Six Points Fellowship for Emerging Jewish Artists is a program of the FJC,
+        originally founded in partnership with Avoda Arts, and JDub, with significant
+        funding from The Jewish Federation of Greater Los Angeles, the Jewish Community
+        Foundation of Los Angeles, and the Righteous Persons Foundation.</p>
+</div>   
+    </footer>
+	</div><!-- container -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-11220684-1");
+pageTracker._setDomainName(".notesfromthetribe.com");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

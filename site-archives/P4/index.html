@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+  <script type="text/javascript" src="http://use.typekit.com/cmy5lgf.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js" type="text/javascript"></script>
+  <script type="text/javascript" charset="utf-8">
+      var subdomain = 'notesfromthetribe';
+      $(function() {
+        function findImage(url, size) {
+              if(!size) return url;
+              var ext = url.match(/\.(\w{2,4}$)/)[1];
+              var dir = url.substr(0, url.lastIndexOf('/') + 1);
+              switch(size.toLowerCase()) {
+                  case 'large':
+                      return dir + '300.' + ext;
+                  case 'medium':
+                      return dir + '175.' + ext;
+                  case 'thumb':
+                      return dir + '75.' + ext;
+                  default:
+                      return url;
+              }
+        }
+        $.getJSON('http://api.bigcartel.com/' + subdomain + '/products.js?callback=?', function(products) {
+          $.each(products, function(i, product) {
+            $('#products').append('<li class="four columns alpha"><a class="four columns alpha" href="http://' + subdomain + '.bigcartel.com' + product.url + '"><img src="'&#32;+&#32;findImage(product.images[0].url,&#32;'large')&#32;+&#32;'" width="100%" /></a></li>');
+            if (i == 5) 
+                return false;
+          });
+        });
+      });
+    </script>
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Home - Notes from the Tribe</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="../../styles/base.css">
+	<link rel="stylesheet" href="../../styles/skeleton.css">
+	<link rel="stylesheet" href="../../styles/layout.css">
+	<link rel="stylesheet" href="../../styles/style.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== 
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+        -->
+
+</head>
+<body id="page">
+    <section class="main-nav">
+    <div class="container">
+    <nav role="main" class="main sixteen columns alpha">
+        <ul class="offset-by-four twelve columns alpha">
+            <li class="two columns alpha"><a href="../home/index.html">Home</a></li>
+            <li class="two columns"><a href="../about/index.html">About</a></li>
+            <li class="two columns"><a href="http://store.notesfromthetribe.com">Store</a></li>
+            <li class="two columns"><a href="../gallery/index.html">Art</a></li>
+            <li class="two columns omega"><a href="http://notesfromthetribe.tumblr.com">Blog</a></li>
+        </ul>
+    </nav>
+    </div>
+    </section>
+	<div class="container">
+
+   <section class="four columns alpha general">
+<a href="../../index.html">
+      <img src="../../img/notes_logo.jpg" alt="Notes from the tribe" />
+    </a>
+    <img src="../../img/title.jpg" alt="The art of William Deutsch" />
+        <dl class="four columns alpha contact">
+            <dt>Phone</dt>
+            <dd class="four columns alpha phone"><a href="tel:+1-949-275-0654">949.275.0654</a></dd>
+            <dt>Email</dt>
+            <dd class="four columns alpha"><a href="mailto:crydrawcry@gmail.com">crydrawcry@gmail.com</a></dd>
+        </dl>
+
+        <nav class="social four columns alpha">
+            <ul class="four columns alpha">
+                <li class="one column alpha twitter"><a href="http://twitter.com/#!/willdeutsch">Twitter</a></li>
+                <li class="one column facebook"><a href="http://www.facebook.com/pages/Notes-From-The-Tribe/189786858686">Facebook</a></li>
+                <li class="one column tumblr"><a href="http://notesfromthetribe.tumblr.com">Tumblr</a></li>
+                <li class="one column cargo-collective omega"><a href="http://cargocollective.com/notesfromthetribe">Cargo Collective</a></li>
+            </ul>
+        </nav>
+
+        <h3 class="new-to-store-title four columns alpha">New to the Store</h3>
+        <ul id="products" class="four columns alpha store">
+            </ul>
+    </section>
+<section class="ten columns omega">
+
+
+				    <img src="../../images/uploads/will_deutsch_jewish_art_golden_calf_moses.jpg" style="border: 0;" alt="image" width="580" height="770" />
+
+
+<h4 class="post-title twelve columns alpha"><a href="../home/entry/the_golden_calf/index.html" class="ten columns alpha"><span>Notes from</span> <time>09.05.14</time></a></h4>
+			
+			<p>	
+				  <p>I recently watched an illuminating interview with religious scholar and author Joanna Brooks on the Daily Show With Jon Stewart. <br />
+In it she describes her upbringing in a traditional Mormon household. She remarks that her religion was founded on a 14 year old boy going out into a grove of trees to ask hard questions and so she too &#8216;was taught to ask hard questions&#8217; ever since she was a little girl.&nbsp;  She goes on to say &#8216;I felt like that is what I should do. Life was meaningful, I should seek out meaning.&#8217;<br />
+I was on board.<br />
+Here was a mormon talking to a Jew on television and describing my exact life philosophy.<br />
+Who would&#8217;ve thought? We&#8217;re not so different after all.<br />
+And then she wrapped up her thoughts with the following statement: &#8216;There were answers. It was a beautiful, comforting, warm way to grow up.&#8217;<br />
+And then she totally lost me.<br />
+Answers?<br />
+Her religion had answers?!?!?!!<br />
+And just so I&#8217;m clear here…those answers were COMFORTING AND WARM???<br />
+I was incensed.<br />
+I was jealous.<br />
+As a Jew all I have are questions. And in the rare event of answer I&#8217;m usually left questioning it.<br />
+Far from comforting.<br />
+I&#8217;ve been at this for 30 years and I still don&#8217;t know what God (if he/she/it even exists) looks like.<br />
+I have no idea where I&#8217;m going when I die.<br />
+And much as I can rationalize some reasons for doing so, I don&#8217;t ultimately know exactly why I fast once year for my sins other than that its written that I should. <br />
+But Judaism is not a religion of comfort.<br />
+It is a religion of commandments.<br />
+We don&#8217;t follow them for pleasure or for praise.<br />
+We do them because we&#8217;re told to choose life and pursue justice.<br />
+It is a test.<br />
+A test comprised of unanswerable questions.<br />
+Therein lies the beauty of Judaism.<br />
+It  embraces ambiguity.<br />
+It sees a fundamental truth in nothingness.<br />
+It recognizes that we are desert wanderers seeking exodus, trying desperately to make sense of things that will never make any.<br />
+And in doing so, it destroys all those false idols that would try to convince us of anything else.
+</p>
+</p>
+
+
+
+<nav>
+    <ul class="posts-nav ten columns alpha">
+<li class="three columns alpha">
+
+<a href="../P5/index.html" class="previous"><span>Previous<br /> Drawing</span></a>
+
+</li>
+<li class="four columns"><a href="../home/archives/index.html" title="Archives">Archives</a></li>
+<li class="three columns omega">
+
+<a href="../P3/index.html" class="next"><span>Next <br />drawing</span></a>
+
+</li>
+
+
+
+
+  
+			</section>
+        <section class="two columns omega"></section>
+    <footer class="fourteen columns alpha">
+  <ul class="footer fourteen columns alpha">
+        <li class="copyright ten columns alpha"><span>© 2012</span> William Deutsch</li>
+        <li class="thinkingaboutawesome four columns omega">Designed by <a href="http://mrmrs.cc" title="San Francisco Design">mrmrs</a></li>
+    </ul>
+<div class="fourteen columns alpha six-points">
+<div class="one columns alpha">
+        <img src="../../img/6points.png" width="40px" />
+</div>
+<p class="twelve columns omega">
+ The Six Points Fellowship for Emerging Jewish Artists is a program of the FJC,
+        originally founded in partnership with Avoda Arts, and JDub, with significant
+        funding from The Jewish Federation of Greater Los Angeles, the Jewish Community
+        Foundation of Los Angeles, and the Righteous Persons Foundation.</p>
+</div>   
+    </footer>
+	</div><!-- container -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-11220684-1");
+pageTracker._setDomainName(".notesfromthetribe.com");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>
