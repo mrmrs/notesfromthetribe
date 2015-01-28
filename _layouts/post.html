@@ -2,7 +2,26 @@
 <html lang="en">
   {% include _head.html %}
   <body>
-    <img src="img/{{page.imgsrc}}">
-    {{ content }}
+    {% include _nav.html %}
+    <main class="center mw6">
+      <img src="{{site.url}}/img/{{page.imgsrc}}">
+      <div class="phm phn-ns">
+        {{ content }}
+      </div>
+      <ul class="w-100 cf">
+<li class="wi-50 fl">
+        {% if paginator.previous_page %}
+          <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+        {% endif %}
+</li>
+<li class="wi-50 fl">
+        {% if paginator.next_page %}
+          <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+        {% else %}
+        {% endif %}
+</li>
+      </ul>
+    </main>
+    {% include _footer.html %}
   </body>
 </html>
