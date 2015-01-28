@@ -1,6 +1,6 @@
 // Gulp tasks for Tachyons
 
-// Load plugins 
+// Load plugins
 var gulp = require('gulp'),
     gutil = require('gulp-util'),
     watch = require('gulp-watch'),
@@ -18,7 +18,7 @@ var gulp = require('gulp'),
 // Use csslint without box-sizing or compatible vendor prefixes (these
 // don't seem to be kept up to date on what to yell about)
 gulp.task('csslint', function(){
-  gulp.src('./css/i.css')
+  gulp.src('./css/notesfromthetribe.css')
     .pipe(csslint({
           'compatible-vendor-prefixes': false,
           'box-sizing': false,
@@ -30,15 +30,18 @@ gulp.task('csslint', function(){
 
 // Task that compiles scss files down to good old css
 gulp.task('pre-process', function(){
-  gulp.src('./sass/i.scss')
+  gulp.src('./_sass/notesfromthetribe.scss')
       .pipe(watch(function(files) {
         return files.pipe(sass())
           .pipe(size({gzip: false, showFiles: true, title:'un-prefixed uncompressed css'}))
           .pipe(size({gzip: true, showFiles: true, title:'un-prefixed uncompressed css'}))
+          .pipe(gulp.dest('./css'))
           .pipe(prefix())
+          .pipe(minifyCSS())
+          .pipe(rename({ extname: '.min.css' }))
           .pipe(size({gzip: false, showFiles: true, title:'prefixed uncompressed css'}))
           .pipe(size({gzip: true, showFiles: true, title:'prefixed uncompressed css'}))
-          .pipe(gulp.dest('css'))
+          .pipe(gulp.dest('./css'))
           .pipe(browserSync.reload({stream:true}));
       }));
 });
@@ -46,14 +49,14 @@ gulp.task('pre-process', function(){
 // Minify all css files in the css directory
 // Run this in the root directory of the project with `gulp minify-css `
 gulp.task('minify-css', function(){
-  gulp.src('./css/i.css')
+  gulp.src('./css/notesfromthetribe.css')
     .pipe(minifyCSS())
-    .pipe(rename('i.min.css'))
+    .pipe(rename('notesfromthetribe.min.css'))
     .pipe(gulp.dest('./css/'))
     .pipe(size({gzip: true, showFiles: true, title:'minified css'}));
 });
 
-// Initialize browser-sync which starts a static server also allows for 
+// Initialize browser-sync which starts a static server also allows for
 // browsers to reload on filesave
 gulp.task('browser-sync', function() {
     browserSync.init(null, {
