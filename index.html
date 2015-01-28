@@ -3,16 +3,16 @@ layout: default
 ---
 
 <main>
-  <article>
+  <article class="cf mtl">
     {% for post in site.posts limit: 1 %}
-        <div>
+        <div class="fn wi-100 fl-l wi-50-l">
           <img src="img/{{post.imgsrc}}" class="db">
         </div>
-        <p>
-          Notes from {{ post.date  }}
-        </p>
-        <div class="phm phn-ns">
-          {{ post.content }}
+        <div class="fn wi-100 fl-l wi-50-l pll-l">
+          <h1 class="f2-l mtm mtl-xl phm phn-xl"><small class="db small gray fw4 ttu">Notes from</small> <time>{{ post.date | date_to_long_string }}</time></h1>
+          <div class="phm phn-xl f5 f3-ns serif lh-copy">
+            {{ post.content }}
+          </div>
         </div>
     {% endfor %}
   </article>

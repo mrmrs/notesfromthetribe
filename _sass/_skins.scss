@@ -67,3 +67,8 @@
 .dim:hover { opacity: .4; transition: opacity .15s ease-in; }
 .dim:active,
 .dim:focus { opacity: .8; transition: opacity .15s ease-out; }
+
+.reverse-dim { opacity: .7; transition: opacity .5s ease-in; }
+.reverse-dim:hover { opacity: 1!important; transition: opacity .15s ease-in; }
+.reverse-dim:active,
+.reverse-dim:focus { opacity: .9; transition: opacity .15s ease-out; }
