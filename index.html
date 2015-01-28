@@ -5,10 +5,12 @@ layout: default
 <main>
   <article>
     {% for post in site.posts limit: 1 %}
-      {{ post.content }}
         <div>
           <img src="img/{{post.imgsrc}}">
-       </div>
+        </div>
+        <div class="phm phn-ns">
+          {{ post.content }}
+        </div>
     {% endfor %}
   </article>
 </main>
