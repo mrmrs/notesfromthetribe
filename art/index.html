@@ -2,12 +2,13 @@
 layout: art
 ---
     <main>
+      <h1 class="mvn small book ttu tc pvl">Past Notes</h1>
 <ul class="list wi-100 mln mvn pln phn-ns cf" style="box-sizing: border-box;">
         {% for post in site.posts limit: 100 %}
-          <li class="fl wi-25 mbn db hi4 hi5-ns" style="overflow:hidden;">
+          <li class="fl wi-50 wi-25-ns mbn db hi4 hi5-ns" style="overflow:hidden;">
             <a href="{{ post.url }}"
                class="link db wi-100 hi-100 hide-child"
-               style="background:gray url(../img/{{ post.imgsrc }}) no-repeat center center;background-size: 160%;" title="Notes from {{post.date }}">
+               style="background:gray url(../img/{{ post.imgsrc }}) no-repeat center center;background-size: 160%;">
                <div class="child hi-100 wi-100 pas pam-m phl-l pvx-l" style="background:rgba(255,255,255,0.75);">
                  <span class="db black">Notes from</span>
                  <span class="b black f5 f3-m f2-l"> {{post.date | date_to_long_string }} </span>
