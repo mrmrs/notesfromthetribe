@@ -2,10 +2,16 @@
 layout: art
 ---
     <main>
-<ul class="list wi-100 mln mvn pln phm phn-ns cf" style="box-sizing: border-box;">
+<ul class="list wi-100 mln mvn pln phn-ns cf" style="box-sizing: border-box;">
         {% for post in site.posts limit: 100 %}
-          <li class="fl wi-25 mbn" style="height: 20rem;max-height: 12rem;overflow:hidden;">
-            <a href="{{ post.url }}" class="link db dim" style="width:100%; height: 100%; overflow:hidden;background:black url(../img/{{ post.imgsrc }}) no-repeat center center;background-size: 200%;" title="Notes from {{post.date }}">
+          <li class="fl wi-25 mbn db hi4 hi5-ns" style="overflow:hidden;">
+            <a href="{{ post.url }}"
+               class="link db wi-100 hi-100 hide-child"
+               style="background:gray url(../img/{{ post.imgsrc }}) no-repeat center center;background-size: 160%;" title="Notes from {{post.date }}">
+               <div class="child hi-100 wi-100 pas pam-ns" style="background:rgba(255,255,255,0.75);">
+                 <span class="db black">Notes from</span>
+                 <span class="b black f5 f2-ns"> {{post.date | date_to_long_string }} </span>
+               </div>
             </a>
           </li>
         {% endfor %}
