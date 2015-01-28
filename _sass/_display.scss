@@ -19,6 +19,8 @@
 .dtcol {  display: table-column; }
 .dtcolg { display: table-column-group; }
 
+.db-hover:hover { display: block!important; }
+
 @include break(not-small) {
   .dn-ns {     display: none; }
   .di-ns {     display: inline; }
