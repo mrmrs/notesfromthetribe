@@ -5,20 +5,20 @@
 */
 
 .ttc { text-transform: capitalize; }
-.ttu { text-transform: uppercase; letter-spacing: .2em; }
+.ttu { text-transform: uppercase; letter-spacing: .14em; }
 
 @include break(not-small) {
   .ttc-ns { text-transform: capitalize; }
-  .ttu-ns { text-transform: uppercase; letter-spacing: .2em; }
+  .ttu-ns { text-transform: uppercase; letter-spacing: .14em; }
 }
 
 @include break(medium) {
   .ttc-m { text-transform: capitalize; }
-  .ttu-m { text-transform: uppercase; letter-spacing: .2em; }
+  .ttu-m { text-transform: uppercase; letter-spacing: .14em; }
 }
 
 @include break(large) {
   .ttc-l { text-transform: capitalize; }
-  .ttu-l { text-transform: uppercase; letter-spacing: .2em; }
+  .ttu-l { text-transform: uppercase; letter-spacing: .14em; }
 }
 

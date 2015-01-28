@@ -35,7 +35,7 @@ exclude: [README.md, Rakefile, node_modules]
 
 # Pagination variable for how many posts to show in a list
 # ============================================================
-#paginate: 5
+paginate: 1
 
 # Style of permalinks
 # ============================================================

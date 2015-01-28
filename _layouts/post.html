@@ -4,23 +4,15 @@
   <body>
     {% include _nav.html %}
     <main class="center mw6">
-      <img src="{{site.url}}/img/{{page.imgsrc}}">
-      <div class="phm phn-ns">
+      <img src="{{site.url}}/img/{{page.imgsrc}}" class="mtm">
+      <div class="phm phn-ns mtm">
+        <span class="db small black">Notes from</span>
+        <span class="b black f5 f2-ns"> {{ page.date | date_to_long_string }} </span>
         {{ content }}
+        {% if page.buylink %}
+          <p><a href="{{ page.buylink }}" class="link btn">Buy Print</a></p>
+        {% endif %}
       </div>
-      <ul class="w-100 cf">
-<li class="wi-50 fl">
-        {% if paginator.previous_page %}
-          <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
-        {% endif %}
-</li>
-<li class="wi-50 fl">
-        {% if paginator.next_page %}
-          <a href="{{ paginator.next_page_path }}" class="next">Next</a>
-        {% else %}
-        {% endif %}
-</li>
-      </ul>
     </main>
     {% include _footer.html %}
   </body>
