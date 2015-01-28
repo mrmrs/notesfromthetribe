@@ -946,10 +946,21 @@ div, article, section, main, footer, header {
   display: block !important; }
 
 .hide-child .child {
-  display: none !important; }
+  display: none !important;
+  background-color: rgba(255, 255, 255, 0.6);
+  transition: background-color 0.15s ease-in; }
 
 .hide-child:hover .child {
-  display: block !important; }
+  display: block !important;
+  transition: background-color 0.15s ease-in; }
+
+.hide-child:focus .child {
+  display: block !important;
+  transition: background-color 0.15s ease-in; }
+
+.hide-child:active .child {
+  display: block !important;
+  transition: background-color 0.15s ease-in; }
 
 @media screen and (min-width: 48em) {
   .dn-ns {
@@ -1985,7 +1996,7 @@ img {
   transition: opacity 0.15s ease-in-out; }
 
 .dim:hover {
-  opacity: 0.6;
+  opacity: 0.4;
   transition: opacity 0.15s ease-in; }
 
 .dim:active, .dim:focus {
