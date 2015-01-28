@@ -6,11 +6,11 @@
 
 .link {
   text-decoration: none;
-  transition: all .4s;
+  transition: color .15s ease-in-out;
 }
 
-.link:link    { color: #30BBDB; }
-.link:visited { color: #2D243B; }
-.link:hover   { color: #fff; }
-.link:active  { color: #C4E3E0; }
+.link:link    {  color: black!important; transition: color .15s ease-in; }
+.link:visited {  color: black!important; transition: color .15s ease-in; }
+.link:hover   {  color: $red; transition: color .15s ease-in; }
+.link:active  {  color: #C4E3E0; transition: color .15s ease-in; }
 

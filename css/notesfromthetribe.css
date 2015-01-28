@@ -1275,19 +1275,23 @@ img {
 */
 .link {
   text-decoration: none;
-  transition: all 0.4s; }
+  transition: color 0.15s ease-in-out; }
 
 .link:link {
-  color: #30BBDB; }
+  color: black !important;
+  transition: color 0.15s ease-in; }
 
 .link:visited {
-  color: #2D243B; }
+  color: black !important;
+  transition: color 0.15s ease-in; }
 
 .link:hover {
-  color: #fff; }
+  color: #f45862;
+  transition: color 0.15s ease-in; }
 
 .link:active {
-  color: #C4E3E0; }
+  color: #C4E3E0;
+  transition: color 0.15s ease-in; }
 
 /*
 
@@ -3243,28 +3247,28 @@ img {
 
 .ttu {
   text-transform: uppercase;
-  letter-spacing: 0.2em; }
+  letter-spacing: 0.14em; }
 
 @media screen and (min-width: 48em) {
   .ttc-ns {
     text-transform: capitalize; }
   .ttu-ns {
     text-transform: uppercase;
-    letter-spacing: 0.2em; } }
+    letter-spacing: 0.14em; } }
 
 @media screen and (min-width: 48em) and (max-width: 64em) {
   .ttc-m {
     text-transform: capitalize; }
   .ttu-m {
     text-transform: uppercase;
-    letter-spacing: 0.2em; } }
+    letter-spacing: 0.14em; } }
 
 @media screen and (min-width: 64em) {
   .ttc-l {
     text-transform: capitalize; }
   .ttu-l {
     text-transform: uppercase;
-    letter-spacing: 0.2em; } }
+    letter-spacing: 0.14em; } }
 
 /*
 
