@@ -1,0 +1,16 @@
+<article>
+  <div class="center mw8 tc">
+    <h1 class="book f4 serif">archives</h1>
+    <ul class="list pln mln">
+      {% for post in site.posts %}
+        <li>
+          <a class="link f3 pvl" href="{{ post.url }}">
+            <span class="f5 db tc">Notes from</span>
+            <time class="b">{{ post.postDate }}</time>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</article>
+
