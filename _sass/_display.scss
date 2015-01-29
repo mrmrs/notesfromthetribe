@@ -20,10 +20,10 @@
 .dtcolg { display: table-column-group; }
 
 .db-hover:hover { display: block!important; }
-.hide-child .child { display: none!important; background-color: rgba(255,255,255, 0.6); transition: background-color .15s ease-in;}
-.hide-child:hover  .child { display: block!important; transition: background-color .15s ease-in; }
-.hide-child:focus  .child { display: block!important; transition: background-color .15s ease-in; }
-.hide-child:active .child { display: block!important; transition: background-color .15s ease-in; }
+.hide-child .child { display: none!important; background-color: rgba(255,255,255, 0.6); }
+.hide-child:hover  .child { display: block!important; }
+.hide-child:focus  .child { display: block!important; }
+.hide-child:active .child { display: block!important; }
 
 @include break(not-small) {
   .dn-ns {     display: none; }
