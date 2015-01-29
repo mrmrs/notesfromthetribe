@@ -3,17 +3,36 @@
   {% include _head.html %}
   <body>
     {% include _nav.html %}
-    <main class="center mw7">
-      <img src="{{site.url}}/img/{{page.imgsrc}}" >
-      <div class="phm phn-ns mtm">
-        <span class="db small black">Notes from</span>
-        <span class="b black f5 f2-ns"> {{ page.date | date_to_long_string }} </span>
-        {{ content }}
-        {% if page.buylink %}
-          <p><a href="{{ page.buylink }}" class="link btn">Buy Print</a></p>
-        {% endif %}
-      </div>
-    </main>
+    <main class="center mw7 mw9-l cf">
+            {% if page.nextLink %}
+            <a href="{{site.url}}/{{ page.nextLink }}" class="db tr ttu link b fl-l wi-50-l ptl-l">
+                <img src="{{site.url}}/img/{{page.imgsrc}}" class="db">
+              </a>
+            {% endif %}
+            <div class="fl-l wi-50-l pll-l ptl-l prl-l">
+              {% if page.buylink %}
+                <a href="{{ page.buylink }}" class="link pas br2 ba b--light-gray phm bg-near-white dark-gray fr mtn mtm-l mrm mrn-l">Buy Print</a>
+              {% endif %}
+              <div class="phm phn-ns mtm">
+                <span class="db small black">Notes from</span>
+                <span class="b black f5 f2-ns"> {{ page.date | date_to_long_string }} </span>
+                <div class="lh-copy">
+                {{ content }}
+                </div>
+
+              </div>
+            </div>
+                {% if page.prevLink || page.nextLink %}
+                  <ul class="list cf mln pln">
+                    {% if page.prevLink %}
+                    <li class="fl wi-50"><a href="{{site.url}}/{{ page.prevLink }}" class="db tl ttu link b">Previous</a></li>
+                    {% endif %}
+                    {% if page.nextLink %}
+                    <li class="fl wi-50"><a href="{{site.url}}/{{ page.nextLink }}" class="db tr ttu link b">Next</a></li>
+                    {% endif %}
+                  </ul>
+                {% endif %}
+      </main>
     {% include _footer.html %}
   </body>
 </html>
