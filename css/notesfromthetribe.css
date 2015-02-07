@@ -3657,6 +3657,22 @@ img {
   .f6-l {
     font-size: 1rem; } }
 
+@media screen and (min-width: 96em) {
+  .mega-xl {
+    font-size: 4rem; }
+  .f1-xl {
+    font-size: 3rem; }
+  .f2-xl {
+    font-size: 2rem; }
+  .f3-xl {
+    font-size: 1.5rem; }
+  .f4-xl {
+    font-size: 1.25rem; }
+  .f5-xl {
+    font-size: 1rem; }
+  .f6-xl {
+    font-size: 1rem; } }
+
 /*
 
    UTILITIES

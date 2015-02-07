@@ -38,7 +38,7 @@
                 <footer class="mtx pam">
                   <h1 class="fw4 f5 ttu tc tl-ns">Visit the Store</h1>
                   <ul class="cf mvn mln pln">
-                {% for post in site.related_posts limit: 10 %}
+                {% for post in site.related_posts %}
                   {% if page.buylink %}
                     <li class="fl wi-20 wi-10-ns">
                       <a href="{{ page.buylink }}" class="dim db">
