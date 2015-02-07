@@ -16,4 +16,18 @@ layout: default
         </div>
     {% endfor %}
   </article>
+                <section class="mtx">
+                  <h1 class="fw4 f5 ttu tc tl-ns">Visit the Store</h1>
+                  <ul class="dt mvn mln pln wi-100">
+                  {% for post in site.posts limit: 20 %}
+                  {% if post.buylink %}
+                    <li class="dtc">
+                      <a href="{{ post.buylink }}" class="dim db">
+                        <img src="{{site.url}}/img/thumb/{{ post.imgsrc }}" class="db">
+                      </a>
+                    </li>
+                  {% endif %}
+                {% endfor %}
+                  </ul>
+              </section>
 </main>
