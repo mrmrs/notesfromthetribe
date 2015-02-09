@@ -26,10 +26,10 @@ layout: default
       </article>
       {% endfor %}
     </div>
-    <div class="fl wi-100 wi-50-ns plm prm prn-ns">
+    <div class="fl wi-100 wi-50-ns pll prl prn-ns">
       <h1 class="mtn ttu small f2-ns">Past Notes</h1>
       {% for post in site.posts limit: 5 offset: 1 %}
-      <article class="fl wi-100 pvm pvs-ns bb b--near-white">
+      <article class="fl wi-100 pvm pvm-ns bt b--near-white">
         <a href="{{post.url}}" class="link dim db">
           <div class="fl wi-20">
             <img src="img/thumb/{{post.imgsrc}}" class="db wi-100">
@@ -37,7 +37,8 @@ layout: default
           <div class="fl wi-80 phm">
             <time>{{ post.date | date_to_long_string }}</time>
             {% if post.description %}
-            <p class="lh-copy serif mtxs-ns mbn-ns small">{{ post.description }}</p>
+            <p class="lh-copy serif mtxs-ns mbn-ns small f4-xl">{{ post.description }}</p>
+            <small class="db red">Read more </small>
             {% endif %}
           </div>
         </a>
