@@ -6,9 +6,14 @@
     <main class="center mw7 mw9-l">
       <div class="cf">
             {% if page.nextLink %}
-            <a href="{{site.url}}/{{ page.nextLink }}" class="db tr ttu link b fl-l wi-50-l ptl-l">
+              <a href="{{site.url}}/{{ page.nextLink }}" class="db tr ttu link b fl-l wi-50-l ptl-l">
                 <img src="{{site.url}}/img/{{page.imgsrc}}" class="db">
               </a>
+            {% else %}
+              <a href="{{site.url}}/{{ page.prevLink }}" class="db tr ttu link b fl-l wi-50-l ptl-l">
+                <img src="{{site.url}}/img/{{page.imgsrc}}" class="db">
+              </a>
+
             {% endif %}
             <div class="fl-l wi-50-l pll-l ptl-l prl-l">
               {% if page.buylink %}
@@ -17,7 +22,6 @@
               <div class="phm phn-ns mtm">
                 <span class="db small black">Notes from</span>
                 <span class="b black f5 f2-ns"> {{ page.date | date_to_long_string }} </span>
-                <img class="db" src="{{site.url}}/img/{{ page.imgsrc }}">
                 <div class="lh-copy">
                   {{ content }}
                 </div>
