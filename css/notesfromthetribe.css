@@ -3861,6 +3861,9 @@ img {
 .wi-10 {
   width: 10%; }
 
+.wi-15 {
+  width: 15%; }
+
 .wi-20 {
   width: 20%; }
 
@@ -3923,6 +3926,8 @@ img {
     width: 16rem; }
   .wi-10-ns {
     width: 10%; }
+  .wi-15-ns {
+    width: 15%; }
   .wi-20-ns {
     width: 20%; }
   .wi-25-ns {
@@ -3969,6 +3974,8 @@ img {
     width: 16rem; }
   .wi-10-m {
     width: 10%; }
+  .wi-15-m {
+    width: 15%; }
   .wi-20-m {
     width: 20%; }
   .wi-25-m {
@@ -4015,6 +4022,8 @@ img {
     width: 16rem; }
   .wi-10-l {
     width: 10%; }
+  .wi-15-l {
+    width: 15%; }
   .wi-20-l {
     width: 20%; }
   .wi-25-l {
