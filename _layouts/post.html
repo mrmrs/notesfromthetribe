@@ -3,7 +3,7 @@
   {% include _head.html %}
   <body>
     {% include _nav.html %}
-    <main class="center mw7 mw9-l">
+    <main class="center mw8 mw9-l plm-ns pln-xl">
       <div class="cf">
             {% if page.nextLink %}
               <a href="{{site.url}}/{{ page.nextLink }}" class="db tr ttu link b fl-l wi-50-l ptl-l">
@@ -40,18 +40,79 @@
                 {% endif %}
             </div>
           </div>
-                <footer class="mtx pam">
+                <footer class="mtl ptl bt b--near-white phm phn-xl">
                   <h1 class="fw4 f5 ttu tc tl-ns">Visit the Store</h1>
                   <ul class="cf mvn mln pln">
-                {% for post in site.posts limit: 10 offset: 10 %}
-                  {% if post.buylink %}
+                  {% if page.store-buylink1 %}
                     <li class="fl wi-20 wi-10-ns">
-                      <a href="{{ page.buylink }}" class="dim db">
-                        <img src="{{site.url}}/img/thumb/{{ post.imgsrc }}" class="db">
+                      <a href="{{ page.store-buylink1 }}" class="dim db">
+                        <img src="{{site.url}}/img/thumb/{{ page.store-imgsrc1 }}" class="db">
                       </a>
                     </li>
                   {% endif %}
-                {% endfor %}
+                  {% if page.store-buylink2 %}
+                    <li class="fl wi-20 wi-10-ns">
+                      <a href="{{ page.store-buylink2 }}" class="dim db">
+                        <img src="{{site.url}}/img/thumb/{{ page.store-imgsrc2 }}" class="db">
+                      </a>
+                    </li>
+                  {% endif %}
+                  {% if page.store-buylink3 %}
+                    <li class="fl wi-20 wi-10-ns">
+                      <a href="{{ page.store-buylink3 }}" class="dim db">
+                        <img src="{{site.url}}/img/thumb/{{ page.store-imgsrc3 }}" class="db">
+                      </a>
+                    </li>
+                  {% endif %}
+                  {% if page.store-buylink4 %}
+                    <li class="fl wi-20 wi-10-ns">
+                      <a href="{{ page.store-buylink4 }}" class="dim db">
+                        <img src="{{site.url}}/img/thumb/{{ page.store-imgsrc4 }}" class="db">
+                      </a>
+                    </li>
+                  {% endif %}
+                  {% if page.store-buylink5 %}
+                    <li class="fl wi-20 wi-10-ns">
+                      <a href="{{ page.store-buylink5 }}" class="dim db">
+                        <img src="{{site.url}}/img/thumb/{{ page.store-imgsrc5 }}" class="db">
+                      </a>
+                    </li>
+                  {% endif %}
+                  {% if page.store-buylink6 %}
+                    <li class="fl wi-20 wi-10-ns">
+                      <a href="{{ page.store-buylink6 }}" class="dim db">
+                        <img src="{{site.url}}/img/thumb/{{ page.store-imgsrc6 }}" class="db">
+                      </a>
+                    </li>
+                  {% endif %}
+                  {% if page.store-buylink7 %}
+                    <li class="fl wi-20 wi-10-ns">
+                      <a href="{{ page.store-buylink7 }}" class="dim db">
+                        <img src="{{site.url}}/img/thumb/{{ page.store-imgsrc7 }}" class="db">
+                      </a>
+                    </li>
+                  {% endif %}
+                  {% if page.store-buylink8 %}
+                    <li class="fl wi-20 wi-10-ns">
+                      <a href="{{ page.store-buylink8 }}" class="dim db">
+                        <img src="{{site.url}}/img/thumb/{{ page.store-imgsrc8 }}" class="db">
+                      </a>
+                    </li>
+                  {% endif %}
+                  {% if page.store-buylink9 %}
+                    <li class="fl wi-20 wi-10-ns">
+                      <a href="{{ page.store-buylink9 }}" class="dim db">
+                        <img src="{{site.url}}/img/thumb/{{ page.store-imgsrc9 }}" class="db">
+                      </a>
+                    </li>
+                  {% endif %}
+                  {% if page.store-buylink10 %}
+                    <li class="fl wi-20 wi-10-ns">
+                      <a href="{{ page.store-buylink10 }}" class="dim db">
+                        <img src="{{site.url}}/img/thumb/{{ page.store-imgsrc10 }}" class="db">
+                      </a>
+                    </li>
+                  {% endif %}
                   </ul>
               </footer>
       </main>
