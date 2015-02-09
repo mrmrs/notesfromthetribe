@@ -30,7 +30,8 @@
 .yellow {  color: $yellow; }
 .light-yellow {  color: $light-yellow; }
 .orange {  color: $orange; }
-.red {     color: $red; }
+.red {     color: $red!important; }
+.red:link {     color: $red!important; }
 .fuchsia { color: $fuchsia; }
 .purple {  color: $purple; }
 .maroon {  color: $maroon; }
@@ -64,7 +65,7 @@
 .bg-maroon {  background-color: $maroon; }
 
 .dim { opacity: 1; transition: opacity .15s ease-in-out; }
-.dim:hover { opacity: .4; transition: opacity .15s ease-in; }
+.dim:hover {  opacity: .4; transition: opacity .15s ease-in; }
 .dim:active,
 .dim:focus { opacity: .8; transition: opacity .15s ease-out; }
 
@@ -72,3 +73,5 @@
 .reverse-dim:hover { opacity: 1!important; transition: opacity .15s ease-in; }
 .reverse-dim:active,
 .reverse-dim:focus { opacity: .9; transition: opacity .15s ease-out; }
+
+

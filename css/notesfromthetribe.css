@@ -1960,7 +1960,10 @@ img {
   color: #FF851B; }
 
 .red {
-  color: #f45862; }
+  color: #f45862 !important; }
+
+.red:link {
+  color: #f45862 !important; }
 
 .fuchsia {
   color: #F012BE; }
