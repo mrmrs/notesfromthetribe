@@ -8,13 +8,13 @@ layout: default
       {% for post in site.posts limit: 1 %}
       <article class="pbl mbl">
         <div class="fn wi-100 fl-l plm-ns pln-xl">
-          <a class="dim link" href="{{post.url}}">
+          <a class="dim link" href="{{site.url}}/{{post.url}}">
             <img src="img/{{post.imgsrc}}" class="db">
           </a>
         </div>
         <div class="fn wi-100 fl-l">
           <h1 class="f2-l mtm mtl-xl phm phn-xl">
-            <a class="link" href="{{post.url}}">
+            <a class="link" href="{{site.url}}/{{post.url}}">
               <small class="db small gray fw4 ttu">Notes from</small>
               <time>{{ post.date | date_to_long_string }}</time>
             </a>
