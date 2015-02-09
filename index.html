@@ -4,28 +4,40 @@ layout: default
 
 <main class="">
   <article class="cf wi-100 mtl">
-    <div class="fl wi-50">
+    <div class="fl wi-100 wi-50-ns">
       {% for post in site.posts limit: 1 %}
       <div class="fn wi-100 fl-l">
-        <img src="img/{{post.imgsrc}}" class="db">
+        <a class="dim link" href="{{post.url}}">
+          <img src="img/{{post.imgsrc}}" class="db">
+        </a>
       </div>
       <div class="fn wi-100 fl-l">
-        <h1 class="f2-l mtm mtl-xl phm phn-xl"><small class="db small gray fw4 ttu">Notes from</small> <time>{{ post.date | date_to_long_string }}</time></h1>
+        <h1 class="f2-l mtm mtl-xl phm phn-xl">
+          <a class="link" href="{{post.url}}">
+            <small class="db small gray fw4 ttu">Notes from</small>
+            <time>{{ post.date | date_to_long_string }}</time>
+          </a>
+        </h1>
         <div class="phm phn-xl f5 f3-ns serif lh-copy">
           {{ post.content }}
         </div>
       </div>
       {% endfor %}
     </div>
-    <div class="fl wi-50 plm">
-      {% for post in site.posts limit: 10 offset: 1 %}
-      <article class="fl wi-100">
-        <div class="fl wi-10">
-          <img src="img/thumb/{{post.imgsrc}}" class="db">
-        </div>
-        <div class="fl wi-90 plm">
-          <time>{{ post.date | date_to_long_string }}</time>
-        </div>
+    <div class="fl wi-100 wi-50-ns plm">
+      {% for post in site.posts limit: 5 offset: 1 %}
+      <article class="fl wi-100 mbs">
+        <a href="{{post.url}}" class="link dim db">
+          <div class="fl wi-20">
+            <img src="img/thumb/{{post.imgsrc}}" class="db wi-100">
+          </div>
+          <div class="fl wi-80 plm">
+            <time>{{ post.date | date_to_long_string }}</time>
+            {% if post.description %}
+            <p class="serif">{{ post.description }}</p>
+            {% endif %}
+          </div>
+        </a>
       </article>
       {% endfor %}
     </div>
