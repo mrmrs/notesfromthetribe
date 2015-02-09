@@ -1284,11 +1284,11 @@ img {
   transition: color 0.15s ease-in-out; }
 
 .link:link {
-  color: black !important;
+  color: black;
   transition: color 0.15s ease-in; }
 
 .link:visited {
-  color: black !important;
+  color: black;
   transition: color 0.15s ease-in; }
 
 .link:hover {

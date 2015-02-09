@@ -2,8 +2,8 @@
 layout: default
 ---
 
-<main class="">
-  <section class="cf wi-100 mtl">
+<main>
+  <section class="cf wi-100 mtl-ns">
     <div class="fl wi-100 wi-50-ns">
       {% for post in site.posts limit: 1 %}
       <article class="pbl mbl">
@@ -30,7 +30,7 @@ layout: default
       <h1 class="mtn ttu small f2-ns">Past Notes</h1>
       {% for post in site.posts limit: 5 offset: 1 %}
       <article class="fl wi-100 pvm pvm-ns bt b--near-white">
-        <a href="{{post.url}}" class="link dim db">
+        <a href="{{post.url}}" class="link black dim db">
           <div class="fl wi-20">
             <img src="img/thumb/{{post.imgsrc}}" class="db wi-100">
           </div>

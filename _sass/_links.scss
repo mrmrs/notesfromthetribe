@@ -9,8 +9,8 @@
   transition: color .15s ease-in-out;
 }
 
-.link:link    {  color: black!important; transition: color .15s ease-in; }
-.link:visited {  color: black!important; transition: color .15s ease-in; }
+.link:link    {  color: black; transition: color .15s ease-in; }
+.link:visited {  color: black; transition: color .15s ease-in; }
 .link:hover   {  color: $red; transition: color .15s ease-in; }
 .link:active  {  color: #C4E3E0; transition: color .15s ease-in; }
 
