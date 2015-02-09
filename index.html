@@ -26,7 +26,7 @@ layout: default
       </article>
       {% endfor %}
     </div>
-    <div class="fl wi-100 wi-50-ns pll prl prn-ns">
+    <div class="fl wi-100 wi-50-ns plm prm pll-ns prn-ns">
       <h1 class="mtn ttu small f2-ns">Past Notes</h1>
       {% for post in site.posts limit: 5 offset: 1 %}
       <article class="fl wi-100 pvm pvm-ns bt b--near-white">
@@ -37,7 +37,7 @@ layout: default
           <div class="fl wi-80 phm">
             <time>{{ post.date | date_to_long_string }}</time>
             {% if post.description %}
-            <p class="lh-copy serif mtxs-ns mbn-ns small f4-xl">{{ post.description }}</p>
+            <p class="lh-copy serif mtxs mbn-ns small f4-xl">{{ post.description }}</p>
             <small class="db red">Read more </small>
             {% endif %}
           </div>
@@ -49,7 +49,7 @@ layout: default
 
     <section class="mtl ptl bt b--near-white">
       <div>
-        <h1 class="fw4 f5 ttu tc tl-l phm phn-xl">Visit the Store</h1>
+        <h1 class="fw4 f5 ttu tc tl-l phm phn-xl mbm">Visit the Store</h1>
         <ul class="dt mvn mln pln wi-100">
           {% for post in site.posts limit: 20 %}
             {% if post.buylink %}
