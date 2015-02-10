@@ -19,9 +19,8 @@
               {% if page.buylink %}
                 <a href="{{ page.buylink }}" class="link pas br2 ba b--light-gray phm bg-near-white dark-gray fr mtn mtm-l mrm mrn-l">Buy Print</a>
               {% endif %}
-              <div class="phm phn-ns mtm">
-                <span class="db small black">Notes from</span>
-                <span class="b black f5 f2-ns"> {{ page.date | date_to_long_string }} </span>
+              <div class="phm phn-ns mtm mtn-ns">
+                <h1 class="mtn">{{ page.title }}</h1>
                 <div class="lh-copy">
                   {{ content }}
                 </div>

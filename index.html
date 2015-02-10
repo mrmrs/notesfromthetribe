@@ -15,8 +15,7 @@ layout: default
         <div class="fn wi-100 fl-l">
           <h1 class="f2-l mtm mtl-xl phm phn-xl">
             <a class="link" href="{{site.url}}/{{post.url}}">
-              <small class="db small gray fw4 ttu">Notes from</small>
-              <time>{{ post.date | date_to_long_string }}</time>
+              {{post.title}}
             </a>
           </h1>
           <div class="phm phn-xl f5 f3-ns serif lh-copy">
@@ -35,7 +34,7 @@ layout: default
             <img src="img/thumb/{{post.imgsrc}}" class="db wi-100">
           </div>
           <div class="fl wi-80 phm">
-            <time>{{ post.date | date_to_long_string }}</time>
+            <h1>{{post.title}}
             {% if post.description %}
             <p class="lh-copy serif mtxs mbn-ns small f4-xl">{{ post.description }}</p>
             <small class="db red">Read more </small>
