@@ -3,41 +3,42 @@ layout: default
 ---
 
 <main>
-  <section class="cf wi-100 mtl-ns">
-    <div class="fl wi-100 wi-50-ns">
-      {% for post in site.posts limit: 1 %}
+  <section class="cf w-100 mt4-ns">
+    <div class="fl w-100 w-50-ns">
+      {% for post in site.posts limit: 1 offset: 22 %}
       <article class="pbl mbl">
-        <div class="fn wi-100 fl-l plm-ns pln-xl">
-          <a class="dim link" href="{{site.url}}/{{post.url}}">
+        <div class="fn w-100 fl-l pl4-ns pln-xl">
+          <a class="link dim db" href="{{site.url}}/{{post.url}}">
             <img src="img/{{post.imgsrc}}" class="db">
           </a>
         </div>
-        <div class="fn wi-100 fl-l">
-          <h1 class="f2-l mtm mtl-xl phm phn-xl">
-            <a class="link" href="{{site.url}}/{{post.url}}">
+        <div class="fn w-100 fl-l">
+          <h1 class="f2-l mt3 mt4-xl ph3 ph4-ns ph0-xl">
+            <a class="link dim black fw6 f4" href="{{site.url}}/{{post.url}}">
               {{post.title}}
             </a>
           </h1>
-          <div class="phm phn-xl f5 f3-ns serif lh-copy">
+          <div class="ph3 ph4-ns ph0-xl f5 f4-ns lh-copy measure">
             {{ post.content }}
           </div>
         </div>
       </article>
       {% endfor %}
     </div>
-    <div class="fl wi-100 wi-50-ns plm prm pll-ns prn-ns">
-      <h1 class="mtn ttu small f2-ns">Past Notes</h1>
+    <div class="fl w-100 w-50-ns pl3 pr3 pl5-ns pr0-ns cf">
+      <h1 class="mt0 ttu small f5 f4-ns fw6 fl w-100">Past Notes</h1>
       {% for post in site.posts limit: 5 offset: 1 %}
-      <article class="fl wi-100 pvm pvm-ns bt b--near-white">
+      <article class="fl w-100 pv3 pv0-ns bt b--near-white">
         <a href="{{post.url}}" class="link black dim db">
-          <div class="fl wi-20">
-            <img src="img/thumb/{{post.imgsrc}}" class="db wi-100">
+          <div class="fl pr3">
+            <img src="img/thumb/{{post.imgsrc}}" class="db w-100">
           </div>
-          <div class="fl wi-80 phm">
-            <h1>{{post.title}}
+          <div class="ph3 ph5-ns pt4">
+            <h1 class="mv0 f3 lh-solid">{{post.title}}</h1>
             {% if post.description %}
-            <p class="lh-copy serif mtxs mbn-ns small f4-xl">{{ post.description }}</p>
-            <small class="db red">Read more </small>
+            <p class="lh-copy measure fw4 mv0 mt1 mb0-ns f5 f4-xl">{{ post.description }}</p>
+
+            <small class="db red f6">Read more </small>
             {% endif %}
           </div>
         </a>
@@ -46,10 +47,10 @@ layout: default
     </div>
   </section>
 
-    <section class="mtl ptl bt b--near-white">
+    <section class="mt4 pt4 bt b--near-white">
       <div>
-        <h1 class="fw4 f5 ttu tc tl-l phm phn-xl mbm">Visit the Store</h1>
-        <ul class="dt mvn mln pln wi-100">
+        <h1 class="fw4 f5 ttu tc tl-l ph3 ph0-xl mb3">Visit the Store</h1>
+        <ul class="list-reset dt mv0 ml0 pl0 w-100"80 >
           {% for post in site.posts limit: 20 %}
             {% if post.buylink %}
             <li class="dtc">

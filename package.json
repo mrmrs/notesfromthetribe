@@ -20,18 +20,10 @@
   },
   "devDependencies": {
     "browser-sync": "^1.1.1",
-    "gulp": "^3.8.2",
-    "gulp-autoprefixer": "0.0.7",
-    "gulp-csslint": "^0.1.4",
-    "gulp-minify-css": "^0.3.5",
-    "gulp-rename": "^1.2.0",
-    "gulp-sass": "^0.7.2",
-    "gulp-size": "^0.4.0",
-    "gulp-uncss": "^0.4.4",
-    "gulp-util": "^2.2.18",
-    "gulp-watch": "^0.6.8"
+    "tachyons-cli": "^0.3.3"
   },
   "scripts": {
-    "start": "gulp"
+    "start": "gulp",
+    "build": "tachyons _src/tachyons.css > css/tachyons.css && tachyons _src/tachyons.css -m > css/tachyons.min.css"
   }
 }

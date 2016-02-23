@@ -3,110 +3,110 @@
   {% include _head.html %}
   <body>
     {% include _nav.html %}
-    <main class="center mw8 mw9-l phm-ns phn-xl">
+    <main class="center mw8 mw9-l ph4-ns ph0-xl">
       <div class="cf">
             {% if page.nextLink %}
-              <a href="{{site.url}}/{{ page.nextLink }}" class="db tr ttu link b fl-l wi-50-l ptl-l">
+              <a href="{{site.url}}/{{ page.nextLink }}" class="db tr ttu link dim b fl-l w-50-l ptl-l">
                 <img src="{{site.url}}/img/{{page.imgsrc}}" class="db">
               </a>
             {% else %}
-              <a href="{{site.url}}/{{ page.prevLink }}" class="db tr ttu link b fl-l wi-50-l ptl-l mbm">
+              <a href="{{site.url}}/{{ page.prevLink }}" class="db tr ttu link dim b fl-l w-50-l ptl-l mbm">
                 <img src="{{site.url}}/img/{{page.imgsrc}}" class="db">
               </a>
 
             {% endif %}
-            <div class="fl-l wi-50-l pll-l ptl-l prl-l">
+            <div class="fl-l w-50-l pl4-l ptl-l pr4-l">
               {% if page.buylink %}
-                <a href="{{ page.buylink }}" class="link pas br2 ba b--light-gray phm bg-near-white dark-gray fr mtn mtm-l mrm mrn-l">Buy Print</a>
+                <a href="{{ page.buylink }}" class="ba b--light-gray f6 link dim b pv2 ph3 bg-near-white mid-gray fr mt0 mt3-l mr3 mr0-l">Buy Print</a>
               {% endif %}
-              <div class="phm phn-ns mtm mtn-ns">
+              <div class="ph3 ph0-ns mt3 mtn-ns">
                 <h1 class="mtn">{{ page.title }}</h1>
-                <div class="lh-copy">
+                <div class="f5">
                   {{ content }}
                 </div>
               </div>
                 {% if page.prevLink || page.nextLink %}
-                  <div class="fl phm phn-ns wi-100">
-                    <ul class="list mln pln">
+                  <div class="fl ph3 ph0-ns w-100">
+                    <ul class="list-reset ml0 pl0">
                       {% if page.prevLink %}
-                        <li class="fl wi-50"><a href="{{site.url}}/{{ page.prevLink }}" class="db tl ttu link b">Previous</a></li>
+                        <li class="fl w-50"><a href="{{site.url}}/{{ page.prevLink }}" class="db tl ttu link dim b">Previous</a></li>
                       {% endif %}
                       {% if page.nextLink %}
-                        <li class="fl wi-50"><a href="{{site.url}}/{{ page.nextLink }}" class="db tr ttu link b">Next</a></li>
+                        <li class="fl w-50"><a href="{{site.url}}/{{ page.nextLink }}" class="db tr ttu link dim b">Next</a></li>
                       {% endif %}
                     </ul>
                   </div>
                 {% endif %}
             </div>
           </div>
-                <footer class="mtl ptl bt b--near-white">
+                <footer class="mt4 pt4 bt b--near-white">
                   <h1 class="fw4 f5 ttu tc tl-ns">Visit the Store</h1>
-                  <ul class="cf mvn mln pln">
+                  <ul class="list-reset cf mv0 ml0 pl0">
                   {% if page.store-buylink1 %}
-                    <li class="fl wi-20 wi-10-ns">
+                    <li class="fl w-20 w-10-ns">
                       <a href="{{ page.store-buylink1 }}" class="dim db">
                         <img src="{{site.url}}/img/thumb/{{ page.store-imgsrc1 }}" class="db">
                       </a>
                     </li>
                   {% endif %}
                   {% if page.store-buylink2 %}
-                    <li class="fl wi-20 wi-10-ns">
+                    <li class="fl w-20 w-10-ns">
                       <a href="{{ page.store-buylink2 }}" class="dim db">
                         <img src="{{site.url}}/img/thumb/{{ page.store-imgsrc2 }}" class="db">
                       </a>
                     </li>
                   {% endif %}
                   {% if page.store-buylink3 %}
-                    <li class="fl wi-20 wi-10-ns">
+                    <li class="fl w-20 w-10-ns">
                       <a href="{{ page.store-buylink3 }}" class="dim db">
                         <img src="{{site.url}}/img/thumb/{{ page.store-imgsrc3 }}" class="db">
                       </a>
                     </li>
                   {% endif %}
                   {% if page.store-buylink4 %}
-                    <li class="fl wi-20 wi-10-ns">
+                    <li class="fl w-20 w-10-ns">
                       <a href="{{ page.store-buylink4 }}" class="dim db">
                         <img src="{{site.url}}/img/thumb/{{ page.store-imgsrc4 }}" class="db">
                       </a>
                     </li>
                   {% endif %}
                   {% if page.store-buylink5 %}
-                    <li class="fl wi-20 wi-10-ns">
+                    <li class="fl w-20 w-10-ns">
                       <a href="{{ page.store-buylink5 }}" class="dim db">
                         <img src="{{site.url}}/img/thumb/{{ page.store-imgsrc5 }}" class="db">
                       </a>
                     </li>
                   {% endif %}
                   {% if page.store-buylink6 %}
-                    <li class="fl wi-20 wi-10-ns">
+                    <li class="fl w-20 w-10-ns">
                       <a href="{{ page.store-buylink6 }}" class="dim db">
                         <img src="{{site.url}}/img/thumb/{{ page.store-imgsrc6 }}" class="db">
                       </a>
                     </li>
                   {% endif %}
                   {% if page.store-buylink7 %}
-                    <li class="fl wi-20 wi-10-ns">
+                    <li class="fl w-20 w-10-ns">
                       <a href="{{ page.store-buylink7 }}" class="dim db">
                         <img src="{{site.url}}/img/thumb/{{ page.store-imgsrc7 }}" class="db">
                       </a>
                     </li>
                   {% endif %}
                   {% if page.store-buylink8 %}
-                    <li class="fl wi-20 wi-10-ns">
+                    <li class="fl w-20 w-10-ns">
                       <a href="{{ page.store-buylink8 }}" class="dim db">
                         <img src="{{site.url}}/img/thumb/{{ page.store-imgsrc8 }}" class="db">
                       </a>
                     </li>
                   {% endif %}
                   {% if page.store-buylink9 %}
-                    <li class="fl wi-20 wi-10-ns">
+                    <li class="fl w-20 w-10-ns">
                       <a href="{{ page.store-buylink9 }}" class="dim db">
                         <img src="{{site.url}}/img/thumb/{{ page.store-imgsrc9 }}" class="db">
                       </a>
                     </li>
                   {% endif %}
                   {% if page.store-buylink10 %}
-                    <li class="fl wi-20 wi-10-ns">
+                    <li class="fl w-20 w-10-ns">
                       <a href="{{ page.store-buylink10 }}" class="dim db">
                         <img src="{{site.url}}/img/thumb/{{ page.store-imgsrc10 }}" class="db">
                       </a>
