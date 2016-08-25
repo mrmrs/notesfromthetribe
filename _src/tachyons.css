@@ -1,18 +1,34 @@
+/* TACHYONS v4.0.8 | github.com/tachyons-css/tachyons */
+
+
 /*
+ *    ████████╗ █████╗  ██████╗██╗  ██╗██╗   ██╗ ██████╗ ███╗   ██╗███████╗
+ *    ╚══██╔══╝██╔══██╗██╔════╝██║  ██║╚██╗ ██╔╝██╔═══██╗████╗  ██║██╔════╝
+ *       ██║   ███████║██║     ███████║ ╚████╔╝ ██║   ██║██╔██╗ ██║███████╗
+ *       ██║   ██╔══██║██║     ██╔══██║  ╚██╔╝  ██║   ██║██║╚██╗██║╚════██║
+ *       ██║   ██║  ██║╚██████╗██║  ██║   ██║   ╚██████╔╝██║ ╚████║███████║
+ *       ╚═╝   ╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝   ╚═╝    ╚═════╝ ╚═╝  ╚═══╝╚══════╝
+ *
+ *    TABLE OF CONTENTS
+ *
+ *    1. External Library Includes
+ *       - Normalize.css | http://normalize.css.github.io
+ *    2. Tachyons Modules
+ *    3. Variables
+ *       - Media Queries
+ *       - Colors
+ *    4. Debugging
+ *       - Debug all
+ *       - Debug children
+ *
+ */
 
-  TACHYONS
 
-*/
-
-
-/* Variables */
-
+/* External Library Includes */
 @import './_normalize';
-@import './_media-queries';
-@import './_colors';
+
 
 /* Modules */
-
 @import './_box-sizing';
 @import './_background-size';
 @import './_borders';
@@ -20,10 +36,12 @@
 @import './_border-radius';
 @import './_border-style';
 @import './_border-widths';
+@import './_box-shadow';
 @import './_code';
 @import './_coordinates';
-@import './_clearfix';
+@import './_clears';
 @import './_display';
+@import './_flexbox';
 @import './_floats';
 @import './_font-family';
 @import './_font-style';
@@ -38,8 +56,10 @@
 @import './_widths';
 @import './_overflow';
 @import './_position';
+@import './_opacity';
 @import './_skins';
 @import './_spacing';
+@import './_tables';
 @import './_text-decoration';
 @import './_text-align';
 @import './_text-transform';
@@ -52,8 +72,12 @@
 @import './_hovers';
 @import './_styles';
 
+/* Variables */
+/* Importing here will allow you to override any variables in the modules */
+@import './_colors';
+@import './_media-queries';
 
+/* Debugging */
 @import './_debug_children';
-
-/* Uncomment out this line if you want to debug your layout */
+/* Uncomment out the  line below and rebuild the css if you want to use pesticide.io to debug layout .*/
 /* @import './_debug'; */

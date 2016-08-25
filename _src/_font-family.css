@@ -6,11 +6,11 @@
 
 
 .sans-serif {
-  font-family: -apple-system,
+  font-family: -apple-system, BlinkMacSystemFont,
                'avenir next', avenir,
-               Roboto, Noto,
                helvetica, 'helvetica neue',
-               Ubuntu,
+               ubuntu,
+               roboto, noto,
                'segoe ui', arial,
                sans-serif;
 }
@@ -19,6 +19,14 @@
   font-family: georgia,
                times,
                serif;
+}
+
+.system-sans-serif {
+  font-family: sans-serif;
+}
+
+.system-serif {
+  font-family: serif;
 }
 
 
@@ -31,13 +39,23 @@ code, .code {
                monospace;
 }
 
+.courier {
+  font-family: 'Courier Next',
+               courier,
+               monospace;
+}
+
 
 /* Sans-Serif Typefaces */
 
 .helvetica {
-  font-family:  helvetica, 'helvetica neue',
-                arial,
-                sans-serif;
+  font-family: 'helvetica neue', helvetica,
+               sans-serif;
+}
+
+.avenir {
+  font-family: 'avenir next', avenir,
+               sans-serif;
 }
 
 
@@ -49,7 +67,7 @@ code, .code {
 }
 
 .times {
-  font-family: Times,
+  font-family: times,
                serif;
 }
 
@@ -65,6 +83,11 @@ code, .code {
 
 .garamond {
   font-family: garamond,
+               serif;
+}
+
+.baskerville {
+  font-family: baskerville,
                serif;
 }
 

@@ -1,16 +1,19 @@
-@custom-media --breakpoint-not-small screen and (min-width: 48em);
-@custom-media --breakpoint-medium screen and (min-width: 48em) and (max-width: 64em);
-@custom-media --breakpoint-large screen and (min-width: 64em);
-
 /*
 
    TYPOGRAPHY
 
 */
 
-/* Measure is limited to ~75 characters */
+
+
+/* Measure is limited to ~66 characters */
 .measure {
   max-width: 30em;
+}
+
+/* Measure is limited to ~80 characters */
+.measure-wide {
+  max-width: 34em;
 }
 
 /* Measure is limited to ~45 characters */
@@ -25,7 +28,11 @@
   margin-bottom: 0;
 }
 
-/* Combine this class with a width to truncate text */
+.small-caps {
+  font-variant: small-caps;
+}
+
+/* Combine this class with a width to truncate text (or just leave as is to truncate at width of containing element. */
 
 .truncate {
   white-space: nowrap;
@@ -37,6 +44,9 @@
   .measure-ns  {
     max-width: 30em;
   }
+  .measure-wide-ns {
+    max-width: 34em;
+  }
   .measure-narrow-ns {
     max-width: 20em;
   }
@@ -44,6 +54,9 @@
     text-indent: 1em;
     margin-top: 0;
     margin-bottom: 0;
+  }
+  .small-caps-ns {
+    font-variant: small-caps;
   }
   .truncate-ns {
     white-space: nowrap;
@@ -53,7 +66,12 @@
 }
 
 @media (--breakpoint-medium) {
-  .measure-m { max-width: 30em; }
+  .measure-m {
+    max-width: 30em;
+  }
+  .measure-wide-m {
+    max-width: 34em;
+  }
   .measure-narrow-m {
     max-width: 20em;
   }
@@ -61,6 +79,9 @@
     text-indent: 1em;
     margin-top: 0;
     margin-bottom: 0;
+  }
+  .small-caps-m {
+    font-variant: small-caps;
   }
   .truncate-m {
     white-space: nowrap;
@@ -70,12 +91,22 @@
 }
 
 @media (--breakpoint-large) {
-  .measure-l { max-width: 30em; }
-  .measure-narrow-l { max-width: 20em; }
+  .measure-l {
+    max-width: 30em;
+  }
+  .measure-wide-l {
+    max-width: 34em;
+  }
+  .measure-narrow-l {
+    max-width: 20em;
+  }
   .indent-l {
     text-indent: 1em;
     margin-top: 0;
     margin-bottom: 0;
+  }
+  .small-caps-l {
+    font-variant: small-caps;
   }
   .truncate-l {
     white-space: nowrap;

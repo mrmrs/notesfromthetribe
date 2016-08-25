@@ -2,14 +2,14 @@
 layout: art
 ---
     <main>
-      <h1 class="mvn small book ttu tc pvl">Past Notes</h1>
-<ul class="list wi-100 mln mvn pln phn-ns cf" style="box-sizing: border-box;">
+      <h1 class="mv0 f6 fw4 ttu tracked tc pv4">Past Notes</h1>
+<ul class="list w-100 ml0 mv0 pl0 ph0-ns cf" style="box-sizing: border-box;">
         {% for post in site.posts limit: 120 %}
-          <li class="fl wi-50 wi-25-ns mbn db hi4 hi5-ns" style="overflow:hidden;">
+          <li class="fl w-50 w-25-ns mb0 db h4 h5-ns" style="overflow:hidden;">
             <a href="{{site.url}}{{ post.url }}"
-               class="link db wi-100 hi-100 hide-child"
+               class="link db w-100 h-100 hide-child"
                style="background:gray url(../img/{{ post.imgsrc }}) no-repeat center center;background-size: 160%;">
-               <div class="child hi-100 wi-100 pas pam-m phl-l pvx-l" style="background:rgba(255,255,255,0.75);">
+               <div class="child h-100 w-100 pa2 pa3-m ph4-l pv5-l" style="background:rgba(255,255,255,0.75);">
                  <h1 class="f4 f2-ns">{{ post.title }}</h1>
 
                </div>
